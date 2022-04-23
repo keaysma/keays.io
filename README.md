@@ -1,3 +1,7 @@
+# What the heck is this?
+
+I'm looking to redo [keays.io](https://keays.io) using SvelteKit
+
 # SvelteKit
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), deployed to [Vercel](https://vercel.com).
