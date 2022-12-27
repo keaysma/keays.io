@@ -19,19 +19,24 @@
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
+
+	scroll-behavior: smooth;
 }
 
 body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--primary-color);
-	/*background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);*/
 	
+	background-image: linear-gradient(
+            45deg,
+            hsl(237deg 100% 20%) 0%,
+            hsl(292deg 100% 50%) 100%
+	);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 body::before {
