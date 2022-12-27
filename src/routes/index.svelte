@@ -3,59 +3,65 @@
     import About from "$lib/About.svelte";
     import Experience from "$lib/Experience.svelte";
     import Skills from "$lib/Skills.svelte";
+    import Resume from "$lib/Resume.svelte";
 
 	const gradientConfig = [
-		[45,	{h: 0, s: 0, l: 0},		{h: 237, s: 100, l: 0},		{h: 292, s: 100, l: 0},		{h: 0, s: 0, l: 0}],
-		[45,	{h: 0, s: 0, l: 0},		{h: 237, s: 100, l: 0},		{h: 292, s: 100, l: 0},		{h: 0, s: 0, l: 0}],
+		[45,	1,		{h: 0, s: 0, l: 0, p: 0},		{h: 237, s: 100, l: 20, p: 0},		{h: 292, s: 100, l: 50,  p: 100},		{h: 0, s: 0, l: 0, p: 0}],
+		[135,	1,		{h: 0, s: 0, l: 0, p: 0},		{h: 300, s: 100, l: 20, p: 0},		{h: 350, s: 100, l: 50,  p: 100},		{h: 0, s: 0, l: 0, p: 0}],
+		[365,	1,		{h: 0, s: 0, l: 0, p: 0},		{h: 137, s: 100, l: 10, p: 0},		{h: 150, s: 80,  l: 40,  p: 100},		{h: 0, s: 0, l: 0, p: 0}],
+		[460,	0.8,	{h: 0, s: 0, l: 0, p: 30},		{h: 337, s: 0,   l: 100, p: 30},	{h: 191, s: 0,   l: 100, p: 30.5},		{h: 0, s: 0, l: 0, p: 30.5}],
+		[495,	12,		{h: 0, s: 87, l: 50, p: 0},		{h: 18,  s: 92,  l: 47, p: 19},		{h: 57,  s: 100, l: 37,  p: 59},		{h: 171, s: 100, l: 36, p: 87}],
 	]
+
+	const calculateGradientProgress = (a, b, progress) => {
+		return a + ((b - a) * progress)
+	}
+
+	const calculateGradientProgressMulti = (a, b, progress) => {
+		return Object.entries(a).reduce(
+			(res, [k, v]) => ({
+				... res,
+				[k]: calculateGradientProgress(v, b[k] ?? v, progress)
+			}),
+			{}
+		)
+	}
 </script>
 
 <Hero/>
 <About/>
 <Experience/>
 <Skills/>
+<Resume/>
 
 <svelte:window 
 	on:scroll={
 		(event) => {
 			const body = document.querySelector('body')
 			const y = window.scrollY / window.innerHeight;
-			// console.log({ y })
 
-			/*
-			237 -> 300
-			292 -> 350
-			*/
+			const [startY, endY] = [Math.floor(y), Math.ceil(y)]
+			const [start, end] = [gradientConfig.at(startY), gradientConfig.at(endY)]
+			
+			if(!start || !end) return
 
-			const firstSectionProgress = Math.min(1, y)
-			const secondSectionProgress = Math.max(1, Math.min(2, y)) - 1
-			const thirdSectionProgress = Math.max(2, Math.min(3, y)) - 2
+			/*console.debug({
+				startSection, endSection,
+				start, end,
+			})*/
 
-			console.log({
-				firstSectionProgress, secondSectionProgress, thirdSectionProgress
-			})
+			const bias = end[1] - start[1]
+			const progress = Math.pow(y - startY, bias + 1)
 
-			const degX = 45  + (90 * firstSectionProgress) + (230 * secondSectionProgress) + (95 * thirdSectionProgress);
-			const degA = 237 + (63 * firstSectionProgress) + (-63 * secondSectionProgress) + (100 * thirdSectionProgress);
-			const degB = 292 + (58 * firstSectionProgress) + (-159 * secondSectionProgress) + (200 * thirdSectionProgress);
-			const satA = 100 - (thirdSectionProgress * 100);
-			const satB = 20 + (thirdSectionProgress * 80);
-			const satC = 50 + (thirdSectionProgress * 50);
+			const [degStart, degEnd] = [start[0], end[0]]
+			const deg = calculateGradientProgress(degStart, degEnd, progress)
 
-			const thirdSectionScaleCenter = 30
-			const scaleA = thirdSectionProgress * (thirdSectionScaleCenter + 2);
-			const scaleB = thirdSectionProgress * (thirdSectionScaleCenter + 2);
-			const scaleC = 100 - (thirdSectionProgress * (100 - (thirdSectionScaleCenter + 3)));
-			const scaleD = 125 - (thirdSectionProgress * (100 - (thirdSectionScaleCenter + 3) + 25));
-
+			const colors = start.slice(2).map((item, index) => calculateGradientProgressMulti(item, end[index + 2] || item, progress))
 
 			body.style.backgroundImage = `
 				linear-gradient(
-					${degX}deg, 
-					rgb(0, 0, 0) ${scaleA}%,
-					hsl(${degA}deg ${satA}% ${satB}%) ${scaleB}%, 
-					hsl(${degB}deg ${satA}% ${satC}%) ${scaleC}%,
-					rgb(0, 0, 0) ${scaleD}%
+					${deg}deg,
+					${colors.map(({h, s, l, p}) => `hsl(${h}deg ${s}% ${l}%) ${p}%`).join(',')}
 				)
 			`;
 		}

@@ -14,34 +14,54 @@
             to quality, to marketing, user experience, and all parts in between.
         </p>
     </div>
-    <svg class="absolute" viewBox="0 0 340 333">
-        <path
-            class="path"
-            fill="transparent"
-            stroke="gold"
-            stroke-width="0.5"
-            d="M66.039,133.545c0,0-21-57,18-67s49-4,65,8
-        s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41
-        C46.039,146.545,53.039,128.545,66.039,133.545z"
+    <svg class="absolute" viewBox="0 0 100 100">
+        <!-- <path 
+            class="path" 
+            fill=none 
+            stroke="gold" 
+            stroke-width="0.5" 
+            d="
+                M 6.039 33.545 
+                C 6.039 32.545 184.718 14.853 122.878 193.627 
+                C 141.038 252.401 269.07 225.993 265.07 237.993 
+                C 172.471 243.543 154.966 228.646 128.588 190.291 
+                C 109.869 109.988 199.052 100.858 63.039 40.545 
+                Z
+            "
+        /> -->
+        <path 
+            class="path" 
+            fill=none 
+            stroke="gold" 
+            stroke-width="0.5" 
+            d="
+                M 000  005 
+                C 000  005  050  -00  030  040 
+                C 025  050  -10  080  100  070
+            "
         />
     </svg>
 </section>
 
-<svelte:window 
-	on:scroll={
-		(event) => {
-			const body = document.querySelector('body')
-            const path = document.querySelector('.path')
-			const y = window.scrollY / window.innerHeight;
+<svelte:window
+    on:scroll={(event) => {
+        const path = document.querySelector(".path");
+        const y = window.scrollY / window.innerHeight;
 
-			const firstSectionProgress = Math.min(1, y)
-			const secondSectionProgress = Math.max(1, Math.min(2, y)) - 1
-			const thirdSectionProgress = Math.max(2, Math.min(3, y)) - 2
+        const offsetA = 0.68;
+        const progressA = Math.max(offsetA, Math.min(1 + offsetA, y)) - offsetA;
 
+        const offsetB = 0.77;
+        const progressB = Math.max(offsetB, Math.min(1 + offsetB, y)) - offsetB;
 
-			path.style.strokeDashoffset = 1000 - (secondSectionProgress * 2000)
-		}
-	} 
+        const strokeDashOffset = 1000 - (progressA * 400) - (Math.ceil(progressB - 0.2) * 850) - (progressB * 100);
+
+        console.log({
+            y, progressA, progressB, strokeDashOffset
+        })
+
+        path.style.strokeDashoffset = strokeDashOffset;
+    }}
 />
 
 <style>
