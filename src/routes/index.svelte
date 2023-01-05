@@ -1,9 +1,9 @@
 <script context="module">
-	import Hero from "$lib/Hero.svelte";
-    import About from "$lib/About.svelte";
-    import Experience from "$lib/Experience.svelte";
-    import Skills from "$lib/Skills.svelte";
-    import Resume from "$lib/Resume.svelte";
+	import Hero from "$lib/content/Hero.svelte";
+    import About from "$lib/content/About.svelte";
+    import Experience from "$lib/content/Experience.svelte";
+    import Skills from "$lib/content/Skills.svelte";
+    import Resume from "$lib/content/Resume.svelte";
 
 	const gradientConfig = [
 		[45,	1,		{h: 0, s: 0, l: 0, p: 0},		{h: 237, s: 100, l: 20, p: 0},		{h: 292, s: 100, l: 50,  p: 100},		{h: 0, s: 0, l: 0, p: 0}],
@@ -29,10 +29,12 @@
 </script>
 
 <Hero/>
-<About/>
-<Experience/>
-<Skills/>
-<Resume/>
+<div class="my-auto ml-auto xl:pt-28 px-4 lg:px-0 lg:pr-16 xl:pr-48 lg:w-7/12">
+	<About/>
+	<Experience/>
+	<Skills/>
+	<Resume/>
+</div>
 
 <svelte:window 
 	on:scroll={

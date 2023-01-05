@@ -3,7 +3,7 @@
 </svelte:head>
 
 <section id="home" class="h-screen w-full">
-    <div class="hidden md:fixed left-0 sm:flex flex-col px-4 gap-2 sm:gap-0 mr-auto">
+    <div class="absolute lg:fixed left-0 sm:flex flex-col px-4 gap-2 sm:gap-0 mr-auto">
         <h1 class="text-left text-6xl sm:text-6xl">Michael</h1>
         <div class="backdrop-invert">
             <h1
@@ -14,9 +14,10 @@
         </div>
         <h1 class="text-left text-6xl sm:text-6xl">Keays</h1>
     </div>
-    <div class="w-full hidden sm:flex flex-col sm:flex-row justify-between sm:px-6 mt-80">
-        <h2 class="fixed">Software Engineer</h2>
-        <div class="flex flex-row gap-4 sm:gap-12 ml-auto">
+    <div class="w-full flex flex-col lg:flex-row lg:justify-between px-5 mt-80">
+        <h2>Software Engineer</h2>
+        <div class="h-px w-48 bg-white lg:hidden my-1"/>
+        <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
