@@ -1,62 +1,74 @@
+<script>
+    import Section from "$lib/Section.svelte";
+</script>
+
 <svelte:head>
     <title>Michael-Andrew Keays</title>
 </svelte:head>
 
-<section id="home" class="h-screen w-full">
-    <div class="absolute lg:fixed left-0 sm:flex flex-col px-4 gap-2 sm:gap-0 mr-auto">
-        <h1 class="text-left text-6xl sm:text-6xl">Michael</h1>
-        <div class="backdrop-invert">
-            <h1
-                class="text-left text-6xl sm:text-6xl invert text-shadow italic -ml-3"
-            >
-                Andrew
-            </h1>
+<Section id="home">
+    <div
+        class="relative flex flex-col items-center justify-center w-full h-full"
+    >
+        <h1>Michael.</h1>
+        <div class="accent a">
+            <div class="line" />
+            <p class="sun">✺</p>
         </div>
-        <h1 class="text-left text-6xl sm:text-6xl">Keays</h1>
-    </div>
-    <div class="w-full flex flex-col lg:flex-row lg:justify-between px-5 mt-80">
-        <h2>Software Engineer</h2>
-        <div class="h-px w-48 bg-white lg:hidden my-1"/>
-        <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="/resume">Resume</a>
+        <div class="accent b">
+            <div class="line" />
+            <p class="sun">✺</p>
+        </div>
+        <div class="menu">
+            <a href="#about">about</a>
+            <a href="/">resume</a>
         </div>
     </div>
-</section>
+</Section>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Righteous&family=Titillium+Web:wght@600&family=Unbounded&display=swap");
+    h1 {
+        font-size: 8rem;
+    }
 
-    section {
+    .accent {
+        display: flex;
+        align-items: center;
+
+        position: absolute;
+    }
+
+    .accent.a {
+        left: 0;
+        top: 5vh;
+    }
+
+    .accent.b {
+        flex-direction: row-reverse;
+
+        right: 0;
+        bottom: 5vh;
+    }
+
+    .accent .line {
+        height: 2px;
+        width: 95vw;
+        background-color: var(--t-main);
+    }
+
+    .accent .sun {
+        margin: 0 5px;
+    }
+
+    .menu {
+        border-top: 2px solid var(--t-main);
+        color: var(--t-main);
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-    }
+        align-items: start;
 
-    #home {
-        
-    }
-
-    h1 {
-        width: 100%;
-        color: white;
-        font-family: "Michroma";
-        padding: 0;
-    }
-
-    h2 {
-        color: white;
-    }
-
-    a {
-        color: white;
-    }
-
-    .text-shadow {
-        text-shadow: 2px 0 #0008;
+        width: 17.5rem;
+        transform: translate(-7.9rem, -2.75rem);
     }
 </style>
