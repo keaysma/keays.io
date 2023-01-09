@@ -1,66 +1,32 @@
 <script>
     import Section from "$lib/Section.svelte";
+    import Sun from "$lib/sun.svelte";
     import Title from "$lib/Title.svelte";
 </script>
 
-<Section id=about>
-    <Title>Who is Michael?</Title>
-    <p class="text-2xl w-full text-white">
-        Passionate technologist, enthusiastic learner, strong communicator, and
-        experienced leader. Excited to take on new opportunities and challanges.
-        I have spent time building skills across several different software
-        industries since I was young. I am at my best when trailblazing, and
-        enjoy working as both a self-starter, a team member, and also as a
-        mentor. While I focus myself as a developer, I love working with all
-        parts of the software cycle: From management, to quality, to marketing,
-        user experience, and all parts in between.
-    </p>
-    <svg class="hidden lg:block absolute left-0 transform -translate-y-36" viewBox="0 0 100 100">
-        <path
-            class="path"
-            fill="none"
-            stroke="gold"
-            stroke-width="0.5"
-            d="
-                M 000  005 
-                C 000  005  050  -00  030  040 
-                C 025  050  -10  080  100  070
-            "
-        />
-    </svg>
+<Section id="about">
+    <div class="relative flex flex-col items-center gap-2">
+        <a href="/" class="text-xs mb-24">home</a>
+        <Title>Who is Michael?</Title>
+        <p class="px-12 md:px-0 md:text-2xl md:w-[525px]">
+            Purpose, Passion, Patience <br />
+            Community, Collaboration, <br />
+            Learning, Leading, <br /> <br />
+
+            I like code, and web-dev. <br />
+            I love solving challenging problems in new ways, and making a positive difference
+            in the world. <br />
+            I survive on a diet of <strike>coffee</strike> learning something new
+            everyday. <br />
+            I revel in the unknown, and the experimental. <br />
+            I am empowered by teammates who feel the same way. <br />
+        </p>
+        <!-- <Sun/> -->
+        <a 
+            href="#projects" 
+            class="text-xs mt-24 z-10" 
+        >
+            projects
+        </a>
+    </div>
 </Section>
-
-<svelte:window
-    on:scroll={(event) => {
-        const path = document.querySelector(".path");
-        const y = window.scrollY / window.innerHeight;
-
-        const offsetA = 0.68;
-        const progressA = Math.max(offsetA, Math.min(1 + offsetA, y)) - offsetA;
-
-        const offsetB = 0.79;
-        const progressB = Math.max(offsetB, Math.min(1 + offsetB, y)) - offsetB;
-
-        const strokeDashOffset =
-            1000 -
-            progressA * 400 -
-            Math.ceil(progressB - 0.2) * 850 -
-            progressB * 200;
-
-        console.log({
-            y,
-            progressA,
-            progressB,
-            strokeDashOffset,
-        });
-
-        path.style.strokeDashoffset = strokeDashOffset;
-    }}
-/>
-
-<style>
-    .path {
-        stroke-dashoffset: 100;
-        stroke-dasharray: 1000;
-    }
-</style>

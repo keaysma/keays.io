@@ -10,7 +10,7 @@
     <div
         class="relative flex flex-col items-center justify-center w-full h-full"
     >
-        <h1>Michael.</h1>
+        <h1 class="text-7xl md:text-9xl">Michael.</h1>
         <div class="accent a">
             <div class="line" />
             <p class="sun">✺</p>
@@ -21,16 +21,14 @@
         </div>
         <div class="menu">
             <a href="#about">about</a>
+            <a href="#projects">projects</a>
+            <a href="#experience">experience</a>
             <a href="/">resume</a>
         </div>
     </div>
 </Section>
 
 <style>
-    h1 {
-        font-size: 8rem;
-    }
-
     .accent {
         display: flex;
         align-items: center;
@@ -69,6 +67,17 @@
         align-items: start;
 
         width: 17.5rem;
-        transform: translate(-7.9rem, -2.75rem);
+        transform: translate(-7.9rem, -0.75rem);
+    }
+
+    @media (max-width: 768px) {
+        .accent .line {
+            width: 90vw;
+        }
+
+        .menu {
+            width: 9.75rem;
+            transform: translate(-4.45rem, -0.4rem);
+        }
     }
 </style>
