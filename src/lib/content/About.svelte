@@ -6,7 +6,7 @@
 
 <Section id="about">
     <div class="relative flex flex-col items-center gap-2">
-        <a href="/" class="text-xs mb-24">home</a>
+        <a href="/" class="hidden md:block text-xs mb-24">home</a>
         <Title>Who is Michael?</Title>
         <p class="px-12 md:px-0 md:text-2xl md:w-[525px]">
             Purpose, Passion, Patience <br />
@@ -24,7 +24,7 @@
         <!-- <Sun/> -->
         <a 
             href="#projects" 
-            class="text-xs mt-24 z-10" 
+            class="hidden md:block text-xs mt-24 z-10" 
         >
             projects
         </a>

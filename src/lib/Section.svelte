@@ -2,6 +2,6 @@
     export let id;
 </script>
 
-<section id={id} class="w-full h-screen flex flex-col justify-center">
+<section id={id} class="w-full min-h-screen flex flex-col justify-center">
     <slot/>
 </section>

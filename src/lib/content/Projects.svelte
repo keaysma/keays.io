@@ -11,6 +11,8 @@
 
 <Section id="projects">
     <div class="relative md:w-7/12 px-4 md:px-0 mx-auto flex flex-col items-start">
+        <a href="#about" class="hidden md:block text-xs mb-24 mx-auto">about</a>
+
         <Title>Projects</Title>
         <div
             class="h-px -mt-1 w-full"
@@ -29,5 +31,7 @@
                 <ProjectDisplay/>
             </div>
         </div>
+
+        <a href="#experience" class="hidden md:block text-xs mt-24 mx-auto">experience</a>
     </div>
 </Section>

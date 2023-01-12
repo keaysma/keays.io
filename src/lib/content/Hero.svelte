@@ -6,7 +6,7 @@
     <title>Michael-Andrew Keays</title>
 </svelte:head>
 
-<Section id="home">
+<section id="home" class="w-full h-screen flex flex-col justify-center">
     <div
         class="relative flex flex-col items-center justify-center w-full h-full"
     >
@@ -26,7 +26,7 @@
             <a href="/">resume</a>
         </div>
     </div>
-</Section>
+</section>
 
 <style>
     .accent {

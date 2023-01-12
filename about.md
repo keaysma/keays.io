@@ -53,41 +53,6 @@ A bootloader and rudamentary operating system designed for 32-bit machines. I wr
 Toodo
 I got really frustrated with how I can't find a todo app the does *exactly* what I want, so, I have put together plans to build my own. This is on my... todo list, I haven't started putting down any code yet, just planning. For the frontend, I'm planning on building this in Svelte as a means of building up my understanding of the framework's data management and API request tools.
 
-# Experience
-Full Stack Software Engineer, February 2022 - Present
-Unit21
-- Designing and implementing case management solutions
-- Designing, implementing, and maintaining several microservices, with attention to security, performance at scale, and maintainability
-- Triaging and resolving urgent customer issues, particularly regarding data integrity
-
-Quality Engineer, August 2019 - February 2022
-MicroStrategy
-- Architecting and executing performance tests focused on multiple core server functionalities
-- Designing and executing automated stability, security, and functionality tests
-- Developing and maintaining security automation for native web systems
-- Maintaining existing testing infrastructure in company-wide CI/CD pipelines
-
-Undergraduate Researcher, June 2018 - April 2019
-George Mason University
-- Research in Autonomous Vehicle Integration and Design, as well as modern vehicle safety
-- Designed and developed Open Dataset Labeling Software
-- Research and education in modern data mining techniques for vehicle classification
-
-Aftershool Teacher, Lead, April 2016 - August 2018
-Stem ExCEL
-- Teaching elementary school-grade children skills in computer game design, programming, and electrical engineering
-
-# Education & Certifications
-AWS Certified Cloud Practitioner, October 2020 - October 2023
-
-Certified Kubernetes Application Developer, January 2022 - January 2025
-
-Computer Science, B.S., Linguistics Minor, August 2015 - May 2019
-George Mason University
-
-International Baccalaureate Diploma, August 2011 - May 2015
-George C. Marshall High School
-
 # Skills
 ## Languages and Tools
 - Python
@@ -114,7 +79,45 @@ George C. Marshall High School
 - Cross Functional Team Work
 - Agile Development & Scrum
 
-## Interests
+## Resume
+# Work
+Full Stack Software Engineer, February 2022 - Present
+Unit21
+- Designing and implementing case management solutions
+- Designing, implementing, and maintaining several microservices, with attention to security, performance at scale, and maintainability
+- Triaging and resolving urgent customer issues, particularly regarding data integrity
+
+Quality Engineer, August 2019 - February 2022
+MicroStrategy
+- Architecting and executing performance tests focused on multiple core server functionalities
+- Designing and executing automated stability, security, and functionality tests
+- Developing and maintaining security automation for native web systems
+- Maintaining existing testing infrastructure in company-wide CI/CD pipelines
+
+Undergraduate Researcher, June 2018 - April 2019
+George Mason University
+- Research in Autonomous Vehicle Integration and Design, as well as modern vehicle safety
+- Designed and developed Open Dataset Labeling Software
+- Research and education in modern data mining techniques for vehicle classification
+
+Aftershool Teacher, Lead, April 2016 - August 2018
+Stem ExCEL
+- Teaching elementary school-grade children skills in computer game design, programming, and electrical engineering
+
+# School & Certs
+AWS Certified Cloud Practitioner
+October 2020 - October 2023
+
+Certified Kubernetes Application Developer
+January 2022 - January 2025
+
+Computer Science, B.S., Linguistics Minor, George Mason University
+August 2015 - May 2019
+
+International Baccalaureate Diploma, George C. Marshall High School
+August 2011 - May 2015
+
+# Interests
 Day to day, I make myself happy with gormet coffee, and keep myself sharp by running (usually about 3 miles a day). I love spending time with my family and friends, and raising my dog: Sheeta!
 
 I keep myself up way too late at night working on side projects and reading about new things (that's right, outside of developing, one of my biggest passions is developing). In my highschool days I was a game developer. You can checkout some of my small-time projects on (Gamejolt)[https://gamejolt.com/@ForgeStudios]. Throughout my college days I loved attending hackathons, and many of my projects and awards are recorded on my (Devpost)[https://devpost.com/mkeays]. Now, I spend my time doing webdev, and I am working on (GigNote)[https://gignote.io/], a gig work for musicians, by musicians. More on that in the (projects)[/#projects] section.

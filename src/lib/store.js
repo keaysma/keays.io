@@ -36,20 +36,6 @@ export const projects = [
         image: "",
     },
     {
-        title: "Cookr",
-        href: "https://github.com/keaysma/cookr",
-        brief: "Basically Madlibs for cooking, in an app.",
-        description: "This was a fun little app I made during my college days. Originally I spun this up as an Android-only mobile app. That was a few years ago, and since then, Google took it down because it didn't have a privacy policy :(. I took some time to make another version of it in C++ a while back while getting familiar with the language. Cookr is one of my go-to 'hello world' projects, I'll likely re-implement it several times in the future.",
-        image: "",
-    },
-    {
-        title: "rusty-calc",
-        href: "https://github.com/keaysma/rusty-calc",
-        brief: "",
-        description: "Kinda didn't want to share this one... It's the first thing I ever wrote in Rust. It was fun to work on, and I learned a lot, both about Rust, but also Github automation along the way. The quality here is pretty lacking. This is a project I consider done, I don't plan on working on it anymore.",
-        image: "",
-    },
-    {
         title: "GoComputeMe",
         href: "https://github.com/keaysma/GoComputeMe",
         brief: "Using WebAssembly for democratized workload distrobution.",
@@ -69,5 +55,92 @@ export const projects = [
         brief: "A todo list with just the stuff I want.",
         description: "I got really frustrated with how I can't find a todo app the does *exactly* what I want, so, I have put together plans to build my own. This is on my... todo list, I haven't started putting down any code yet, just planning. For the frontend, I'm planning on building this in Svelte as a means of building up my understanding of the framework's data management and API request tools.",
         image: "",
+    },
+    {
+        title: "Cookr",
+        href: "https://github.com/keaysma/cookr",
+        brief: "Basically Madlibs for cooking, in an app.",
+        description: "This was a fun little app I made during my college days. Originally I spun this up as an Android-only mobile app. That was a few years ago, and since then, Google took it down because it didn't have a privacy policy :(. I took some time to make another version of it in C++ a while back while getting familiar with the language. Cookr is one of my go-to 'hello world' projects, I'll likely re-implement it several times in the future.",
+        image: "",
+    },
+    {
+        title: "rusty-calc",
+        href: "https://github.com/keaysma/rusty-calc",
+        brief: "",
+        description: "Kinda didn't want to share this one... It's the first thing I ever wrote in Rust. It was fun to work on, and I learned a lot, both about Rust, but also Github automation along the way. The quality here is pretty lacking. This is a project I consider done, I don't plan on working on it anymore.",
+        image: "",
+    },
+];
+
+export const experiences = [
+    {
+        name: "Full Stack Software Engineer",
+        company: "Unit21",
+        time: "February 2022 - Present",
+        points: [
+            "Designing and implementing case management solutions",
+            "Designing, implementing, and maintaining several microservices, with attention to security, performance at scale, and maintainability",
+            "Triaging and resolving urgent customer issues, particularly regarding data integrity",
+        ],
+    },
+    {
+        name: "Senior Quality Engineer",
+        company: "MicroStrategy",
+        time: "August 2019 - February 2022",
+        points: [
+            "Architecting and executing performance tests focused on multiple core server functionalities",
+            "Designing and executing automated stability, security, and functionality tests",
+            "Developing and maintaining security automation for native web systems",
+            "Maintaining existing testing infrastructure in company-wide CI/CD pipelines",
+        ],
+    },
+    {
+        name: "Undergraduate Researcher",
+        company: "George Mason University",
+        time: "June 2018 - April 2019",
+        points: [
+            "Research in Autonomous Vehicle Integration and Design, as well as modern vehicle safety",
+            "Designed and developed Open Dataset Labeling Software",
+            "Research and education in modern data mining techniques for vehicle classification",
+        ],
+    },
+    {
+        name: "Lead Afterschool Teacher",
+        company: "Stem ExCEL",
+        time: "April 2016 - August 2018",
+        points: [
+            "Teaching elementary school-grade children skills in computer game design, programming, and electrical engineering",
+        ],
+    },
+];
+
+export const certs = [
+    {
+        name: "Certified Kubernetes Application Developer",
+        company: "The Linux Foundation",
+        time: "January 2022 - January 2025",
+        image: "https://images.credly.com/size/680x680/images/f88d800c-5261-45c6-9515-0458e31c3e16/ckad_from_cncfsite.png",
+        href: "https://www.credly.com/badges/201bb205-dd47-4730-bf18-06c6945e8c80?source=linked_in_profile",
+    },
+    {
+        name: "AWS Certified Cloud Practitioner",
+        company: "Amazon Web Services",
+        time: "October 2020 - October 2023",
+        image: "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+        href: "https://www.credly.com/badges/7d73c9f1-deed-42f3-a096-87e586feafcb?source=linked_in_profile",
+    },
+    {
+        name: "Computer Science, B.S., Linguistics Minor",
+        company: "George Mason University",
+        time: "August 2015 - May 2019",
+        image: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/George_Mason_Patriots_logo.svg/1200px-George_Mason_Patriots_logo.svg.png",
+        href: "",
+    },
+    {
+        name: "International Baccalaureate Diploma",
+        company: "George C. Marshall Highschool",
+        time: "August 2011 - May 2015",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/International_Baccalaureate_Logo.svg/1200px-International_Baccalaureate_Logo.svg.png",
+        href: "",
     },
 ];
