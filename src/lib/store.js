@@ -5,7 +5,7 @@ export const currentProjectId = writable(undefined)
 export const projects = [
     {
         title: "keays.io",
-        href: "https://keays.io",
+        href: "https://github.com/keaysma/keays.io",
         brief: "You are here!",
         description:
             "This website is about... me, and, I like to redo it every few years to practice my skills and learn new things. The first iteration was written using pure HTML & jQuery. The second was written in React, using the Preact framework, and the current iteration is written using SvleteKit.",
