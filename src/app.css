@@ -46,7 +46,11 @@
 	--bg-blue: #83adb5;
 	--bg-sage: #c1c2ad;
 	--bg-pink: #e9e6e2;
-	--bg-main: #181818;
+
+	--bg-d-blue: #38475A;
+	--bg-purple: #321C3B;
+
+	--bg-main: var(--bg-d-blue);
 	
 	--t-maroon: #b54b40;
 	--t-gold: #c3803c;
@@ -54,7 +58,14 @@
 	--t-blue: #2e4045;
 	--t-sage: #545e4b;
 	--t-pink: #b5a4a3;
-	--t-main: #666;
+
+	--t-green-blue: #89A28C;
+	--t-l-blue: #B5D5D4;
+	--t-d-blue: #697B7D;
+	--t-purple: #EACEE3;
+	--t-d-purple: #7B519A; 
+
+	--t-main: var(--t-l-blue);
 	
 	--line-length: 95vw;
 	--sun-size: 20px;
