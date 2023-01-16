@@ -43,7 +43,7 @@
 
 <Section id="experience">
     <div
-        class="relative md:w-7/12 px-4 md:px-0 mx-auto mb-4 flex flex-col items-start"
+        class="relative md:w-7/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
     >
         <Title>Skills</Title>
         <div
@@ -68,14 +68,14 @@
         </ul>
     </div>
     <div
-        class="relative md:w-7/12 px-4 md:px-0 mx-auto mb-4 flex flex-col items-start"
+        class="relative md:w-7/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
     >
         <Title>Work</Title>
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"
         />
-        <div class="flex flex-col gap-4 my-4">
+        <div class="flex flex-col gap-8 my-4">
             {#each experiences as experience}
                 <WorkCard {...experience} />
             {/each}
@@ -89,7 +89,7 @@
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"
         />
-        <div class="flex flex-col gap-4 my-4">
+        <div class="flex flex-col w-full items-center gap-8 my-4 py-6">
             {#each certs as cert}
                 <CertCard {...cert} />
             {/each}

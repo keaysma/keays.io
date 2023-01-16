@@ -7,7 +7,7 @@
 </script>
 
 <div
-    class="flex flex-col md:flex-row items-center gap-2 w-full border rounded-xl"
+    class="flex flex-col md:flex-row items-center gap-2 w-10/12 border rounded-xl"
     style="border-color: var(--t-main); box-shadow: 0 1px var(--t-main);"
 >
     <div

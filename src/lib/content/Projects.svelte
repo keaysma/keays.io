@@ -6,12 +6,14 @@
 
     import { projects } from "$lib/store";
     import ProjectDisplay from "$lib/project-display.svelte";
+    import UpLink from "$lib/up-link.svelte";
+    import DownLink from "$lib/down-link.svelte";
 
 </script>
 
 <Section id="projects">
     <div class="relative md:w-7/12 px-4 md:px-0 mx-auto flex flex-col items-start">
-        <a href="#about" class="hidden md:block text-xs mb-24 mx-auto">about</a>
+        <UpLink title="about" />
 
         <Title>Projects</Title>
         <div
@@ -32,6 +34,6 @@
             </div>
         </div>
 
-        <a href="#experience" class="hidden md:block text-xs mt-24 mx-auto">experience</a>
+        <DownLink title="experience" />
     </div>
 </Section>

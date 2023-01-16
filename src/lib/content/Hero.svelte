@@ -23,7 +23,7 @@
             <a href="#about">about</a>
             <a href="#projects">projects</a>
             <a href="#experience">experience</a>
-            <a href="/">resume</a>
+            <a href="/resume.pdf" target="_blank">resume</a>
         </div>
     </div>
 </section>
