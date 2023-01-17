@@ -12,7 +12,7 @@
 </script>
 
 <Section id="projects">
-    <div class="relative md:w-7/12 px-4 md:px-0 mx-auto flex flex-col items-start">
+    <div class="relative md:w-11/12 lg:w-7/12 px-4 md:px-0 mx-auto flex flex-col items-start">
         <UpLink title="about" />
 
         <Title>Projects</Title>

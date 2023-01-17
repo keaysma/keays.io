@@ -43,7 +43,7 @@
 
 <Section id="experience">
     <div
-        class="relative md:w-7/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
+        class="relative md:w-9/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
     >
         <Title>Skills</Title>
         <div
@@ -68,7 +68,7 @@
         </ul>
     </div>
     <div
-        class="relative md:w-7/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
+        class="relative md:w-9/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
     >
         <Title>Work</Title>
         <div
@@ -82,7 +82,7 @@
         </div>
     </div>
     <div
-        class="relative md:w-7/12 px-4 md:px-0 mx-auto flex flex-col items-start"
+        class="relative md:w-9/12 px-4 md:px-0 mx-auto flex flex-col items-start"
     >
         <Title>School & Certs</Title>
         <div
