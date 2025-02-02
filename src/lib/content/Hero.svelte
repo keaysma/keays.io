@@ -1,8 +1,12 @@
+<script>
+    import Section from "$lib/Section.svelte";
+</script>
+
 <svelte:head>
     <title>Michael-Andrew Keays</title>
 </svelte:head>
 
-<section id="home">
+<Section id="home">
     <div class="accent top">
         <div class="line"></div>
         <p class="sun">✺</p>
@@ -20,28 +24,18 @@
         <li><a href="#experience">experience</a></li>
         <li><a href="/resume.pdf" target="_blank">resume</a></li>
     </menu>
-</section>
+</Section>
 
 <style lang="scss">
-    section#home {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
+    menu {
+        width: 17.5em;
+        transform: translate(-8em, -0.5em);
+        border-top: 2px solid var(--t-main);
 
-        align-items: center;
-        justify-content: center;
-
-        > menu {
-            width: 17.5em;
-            transform: translate(-8em, -0.5em);
+        @media (max-width: 768px) {
+            width: 9.5rem;
+            transform: translate(-4.6em, -0.5em);
             border-top: 2px solid var(--t-main);
-
-            @media (max-width: 768px) {
-                width: 9.5rem;
-                transform: translate(-4.6em, -0.5em);
-                border-top: 2px solid var(--t-main);
-            }
         }
     }
 

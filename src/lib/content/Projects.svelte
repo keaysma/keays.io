@@ -1,7 +1,6 @@
 <script lang="ts">
     import ProjectCard from "$lib/project-card.svelte";
     import Section from "$lib/Section.svelte";
-    import Title from "$lib/Title.svelte";
 
     import { projects } from "$lib/store";
     import ProjectDisplay from "$lib/project-display.svelte";
@@ -14,7 +13,7 @@
     <div class="relative md:w-11/12 lg:w-7/12 px-4 md:px-0 mx-auto flex flex-col items-start">
         <UpLink title="about" />
 
-        <Title>Projects</Title>
+        <h2>Projects</h2>
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"

@@ -16,7 +16,6 @@
     import { certs, experiences } from "$lib/store";
 
     import Section from "$lib/Section.svelte";
-    import Title from "$lib/Title.svelte";
     import WorkCard from "$lib/work-card.svelte";
     import CertCard from "$lib/cert-card.svelte";
 
@@ -45,7 +44,7 @@
     <div
         class="relative md:w-9/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
     >
-        <Title>Skills</Title>
+        <h2>Skills</h2>
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"
@@ -70,7 +69,7 @@
     <div
         class="relative md:w-9/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
     >
-        <Title>Work</Title>
+        <h2>Work</h2>
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"
@@ -84,7 +83,7 @@
     <div
         class="relative md:w-9/12 px-4 md:px-0 mx-auto flex flex-col items-start"
     >
-        <Title>School & Certs</Title>
+        <h2>School & Certs</h2>
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"

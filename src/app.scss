@@ -97,5 +97,10 @@ h2 {
   font-family: display;
 }
 
-h3 {
+h2 {
+  font-size: 3.75em;
+
+  @media (max-width: 769px) {
+    font-size: 3em;
+  }
 }
