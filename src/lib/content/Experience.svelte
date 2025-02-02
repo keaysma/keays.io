@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { FontAwesomeIcon } from "fontawesome-svelte";
     import {
         faPython,

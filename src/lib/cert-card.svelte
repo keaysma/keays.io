@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     export let name, company, time, image, href;
     const src = image, alt = name;
 

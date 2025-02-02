@@ -1,7 +1,3 @@
-<script>
-    import Section from "$lib/Section.svelte";
-</script>
-
 <svelte:head>
     <title>Michael-Andrew Keays</title>
 </svelte:head>

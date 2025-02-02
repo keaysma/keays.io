@@ -1,7 +1,6 @@
-<script>
+<script lang="ts">
     import ProjectCard from "$lib/project-card.svelte";
     import Section from "$lib/Section.svelte";
-    import Text from "$lib/Text.svelte";
     import Title from "$lib/Title.svelte";
 
     import { projects } from "$lib/store";

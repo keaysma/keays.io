@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
     import { currentProjectId } from "$lib/store";
 
-    export let id, title, href, brief, description, image;
+    export let id, title, href, brief;
+    export const description="", image="";
 
     const enter = () => {
         currentProjectId.set(id);
