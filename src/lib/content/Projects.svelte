@@ -18,7 +18,7 @@
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"
-        />
+        ></div>
         <div class="flex flex-row w-full py-4 gap-4">
             <!-- List -->
             <ul class="w-full md:w-2/3 grid md:grid-cols-2 gap-2">

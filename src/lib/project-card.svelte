@@ -1,27 +1,37 @@
 <script lang="ts">
     import { currentProjectId } from "$lib/store";
 
-    export let id, title, href, brief;
-    export const description="", image="";
+    let {
+        id,
+        title,
+        href,
+        brief,
+    }: {
+        id: number;
+        title: string;
+        href: string;
+        brief: string;
+    } = $props();
 
-    const enter = () => {
+    const onmouseenter = () => {
         currentProjectId.set(id);
     };
 
-    const leave = () => {
+    const onmouseleave = () => {
         currentProjectId.set(undefined);
     };
 </script>
 
 <li>
     <a
-        {href} target='_blank'
+        {href}
+        target="_blank"
         class="flex flex-col h-20 md:h-24 px-2 border rounded-lg text-2xl"
         style="border-color: var(--t-main); box-shadow: 0 2px var(--t-main);"
-        on:mouseenter={enter}
-        on:mouseleave={leave}
+        {onmouseenter}
+        {onmouseleave}
     >
         <h3>{title}</h3>
         <p class="text-sm">{brief}</p>
-</a>
+    </a>
 </li>

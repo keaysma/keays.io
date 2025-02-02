@@ -49,7 +49,7 @@
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"
-        />
+        ></div>
         <div class="flex flex-row flex-wrap gap-4 my-4">
             {#each skillIcons as icon}
                 <FontAwesomeIcon
@@ -74,7 +74,7 @@
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"
-        />
+        ></div>
         <div class="flex flex-col gap-8 my-4">
             {#each experiences as experience}
                 <WorkCard {...experience} />
@@ -88,7 +88,7 @@
         <div
             class="h-px -mt-1 w-full"
             style="background-color: var(--t-main);"
-        />
+        ></div>
         <div class="flex flex-col w-full items-center gap-8 my-4 py-6">
             {#each certs as cert}
                 <CertCard {...cert} />

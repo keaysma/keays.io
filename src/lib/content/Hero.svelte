@@ -8,11 +8,11 @@
     >
         <h1 class="text-7xl md:text-9xl">Michael.</h1>
         <div class="accent a">
-            <div class="line" />
+            <div class="line"></div>
             <p class="sun">✺</p>
         </div>
         <div class="accent b">
-            <div class="line" />
+            <div class="line"></div>
             <p class="sun">✺</p>
         </div>
         <div class="menu">

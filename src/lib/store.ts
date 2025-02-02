@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store'
 
-export const currentProjectId = writable(undefined)
+export const currentProjectId = writable<number>(undefined)
 
 export const projects = [
     {

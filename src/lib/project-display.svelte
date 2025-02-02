@@ -15,5 +15,5 @@
         <p class="text-sm">{ project.description }</p>
     </div>
 {:else}
-    <div />
+    <div></div>
 {/if}
