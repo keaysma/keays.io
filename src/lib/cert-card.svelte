@@ -1,6 +1,17 @@
 <script lang="ts">
-    export let name, company, time, image, href;
-    const src = image, alt = name;
+    let {
+        name: alt,
+        image: src,
+        href,
+        company,
+        time,
+    }: {
+        name: string;
+        image: string;
+        href: string;
+        company: string;
+        time: string;
+    } = $props();
 
     import { FontAwesomeIcon } from "fontawesome-svelte";
     import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -26,7 +37,10 @@
         </div>
     </div>
     {#if href}
-        <a {href} class="w-20 flex flex-col items-center mx-auto lg:ml-0 lg:mr-4">
+        <a
+            {href}
+            class="w-20 flex flex-col items-center mx-auto lg:ml-0 lg:mr-4"
+        >
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             <span>See cert</span>
         </a>
