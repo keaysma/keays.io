@@ -1,21 +1,21 @@
-@import '@fontsource/fira-mono';
+@import "@fontsource/fira-mono";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-	font-family: display;
-	src: url(/devinne-swash.regular.ttf);
+  font-family: display;
+  src: url(/devinne-swash.regular.ttf);
 }
-  
+
 @font-face {
-	font-family: body;
-	src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmYmRjRdE.woff2);
+  font-family: body;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmYmRjRdE.woff2);
 }
 
 :root {
-	/*
+  /*
 	Good combos (bg/t):
 	matching colors tend to look good
 	
@@ -41,53 +41,61 @@
 	
 	
 	*/
-	--bg-maroon: #82463a;
-	--bg-maroon-x: #772014;
-	--bg-blue: #83adb5;
-	--bg-sage: #c1c2ad;
-	--bg-pink: #e9e6e2;
+  --bg-maroon: #82463a;
+  --bg-maroon-x: #772014;
+  --bg-blue: #83adb5;
+  --bg-sage: #c1c2ad;
+  --bg-pink: #e9e6e2;
 
-	--bg-d-blue: #38475A;
-	--bg-purple: #321C3B;
+  --bg-d-blue: #38475a;
+  --bg-purple: #321c3b;
 
-	--bg-main: var(--bg-d-blue);
-	
-	--t-maroon: #b54b40;
-	--t-gold: #c3803c;
-	--t-gold-x: #c8906a;
-	--t-blue: #2e4045;
-	--t-sage: #545e4b;
-	--t-pink: #b5a4a3;
+  --bg-main: var(--bg-d-blue);
 
-	--t-green-blue: #89A28C;
-	--t-l-blue: #B5D5D4;
-	--t-d-blue: #697B7D;
-	--t-purple: #EACEE3;
-	--t-d-purple: #7B519A; 
+  --t-maroon: #b54b40;
+  --t-gold: #c3803c;
+  --t-gold-x: #c8906a;
+  --t-blue: #2e4045;
+  --t-sage: #545e4b;
+  --t-pink: #b5a4a3;
 
-	--t-main: var(--t-l-blue);
-	
-	--line-length: 95vw;
-	--sun-size: 20px;
+  --t-green-blue: #89a28c;
+  --t-l-blue: #b5d5d4;
+  --t-d-blue: #697b7d;
+  --t-purple: #eacee3;
+  --t-d-purple: #7b519a;
 
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+  --t-main: var(--t-l-blue);
 
-	scroll-behavior: smooth;
+  --line-length: 95vw;
+  --sun-size: 20px;
+
+  --column-width: 42rem;
+  --column-margin-top: 4rem;
+
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--bg-main);
+  background-color: var(--bg-main);
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li {
-	color: var(--t-main);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  color: var(--t-main);
 }
 
-h1, h2 {
-	font-family: display;
+h1,
+h2 {
+  font-family: display;
 }
 
 h3 {
-	
 }

@@ -3,16 +3,22 @@
   "name": "keays.io",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint .",
+    "test:unit": "vitest",
+    "test": "npm run test:unit -- --run"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^4.0.0",
     "@sveltejs/kit": "^2.16.1",
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
+    "prettier": "^3.4.2",
     "sass-embedded": "^1.83.4",
     "svelte": "^5.19.6",
     "tailwindcss": "^3.0.24"
