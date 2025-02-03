@@ -4,34 +4,63 @@
 
     import { projects } from "$lib/store";
     import ProjectDisplay from "$lib/project-display.svelte";
-    import UpLink from "$lib/up-link.svelte";
-    import DownLink from "$lib/down-link.svelte";
-
 </script>
 
-<Section id="projects">
-    <div class="relative md:w-11/12 lg:w-7/12 px-4 md:px-0 mx-auto flex flex-col items-start">
-        <UpLink title="about" />
-
-        <h2>Projects</h2>
-        <div
-            class="h-px -mt-1 w-full"
-            style="background-color: var(--t-main);"
-        ></div>
-        <div class="flex flex-row w-full py-4 gap-4">
+<Section id="projects" up={{ title: "about" }} down={{ title: "experience" }}>
+    <div class="projects">
+        <h2 class="bar">Projects</h2>
+        <div class="projects-frame">
             <!-- List -->
-            <ul class="w-full md:w-2/3 grid md:grid-cols-2 gap-2">
+            <ul class="projects-list">
                 {#each projects as project, i}
                     <ProjectCard id={i} {...project} />
                 {/each}
             </ul>
 
             <!-- Display -->
-            <div class="hidden md:block md:w-1/3">
-                <ProjectDisplay/>
+            <div class="display-wrapper">
+                <ProjectDisplay />
             </div>
         </div>
-
-        <DownLink title="experience" />
     </div>
 </Section>
+
+<style lang="scss">
+    .projects {
+        position: relative;
+        padding: 0 2em;
+        max-width: 60em;
+
+        > .projects-frame {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 0.5em 0;
+            gap: 1em;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
+
+            > .projects-list {
+                position: relative;
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5em;
+
+                @media (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
+            }
+            
+            > .display-wrapper {
+                display: block;
+                // width: 33%;
+                
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+</style>
