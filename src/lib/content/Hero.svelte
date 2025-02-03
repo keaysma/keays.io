@@ -16,7 +16,7 @@
         <p class="sun">✺</p>
     </div>
 
-    <h1 class="text-7xl md:text-9xl">Michael.</h1>
+    <h1>Michael.</h1>
 
     <menu class="menu">
         <li><a href="#about">about</a></li>
@@ -27,6 +27,14 @@
 </Section>
 
 <style lang="scss">
+    h1 {
+        font-size: 8rem;
+        line-height: 1em;
+
+        @media (max-width: 768px) {
+            font-size: 4.5rem;
+        }
+    }
     menu {
         width: 17.5em;
         transform: translate(-8em, -0.5em);
@@ -34,7 +42,7 @@
 
         @media (max-width: 768px) {
             width: 9.5rem;
-            transform: translate(-4.6em, -0.5em);
+            transform: translate(-4.6em, -0.35em);
             border-top: 2px solid var(--t-main);
         }
     }
@@ -47,7 +55,7 @@
 
         &.top {
             left: 0;
-            top: 4em;
+            top: 2.5em;
 
             > .sun {
                 float: right;
@@ -56,7 +64,7 @@
 
         &.bottom {
             right: 0;
-            bottom: 2em;
+            bottom: 2.5em;
 
             > .sun {
                 float: left;
@@ -66,7 +74,7 @@
         > .line {
             display: inline-block;
             height: 2px;
-            width: 95vw;
+            width: 90vw;
             background-color: var(--t-main);
             margin: auto 0;
         }
