@@ -1,19 +1,23 @@
 <script lang="ts">
-    import { currentProjectId, projects } from "$lib/store";
+    import { currentProjectId, projects, type Project } from "$lib/store";
 
-    let project;
-
+    let project: Project | null = null;
     currentProjectId.subscribe((val) => (project = projects[val]));
 </script>
 
 {#if project}
-    <div class="flex flex-col h-full gap-2">
-        <h3 class="text-4xl">{project.title}</h3>
-        {#if project.image }
-            <img class="h-48 w-48" src={project.image} alt={project.title} />
-        {/if}
-        <p class="text-sm">{ project.description }</p>
-    </div>
+    <h3>{project.title}</h3>
+    <p>{project.description}</p>
 {:else}
     <div></div>
 {/if}
+
+<style lang="scss">
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: small;
+    }
+</style>
