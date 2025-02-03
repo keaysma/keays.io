@@ -26,10 +26,16 @@
 </Section>
 
 <style lang="scss">
+    h2 {
+        @media (max-width: 768px) {
+            font-size: 3.75em
+        }
+    }
+
     .text-content {
         font-size: x-large;
         width: 525px;
-        max-width: 80%;
+        max-width: 90%;
 
         @media (max-width: 768px) {
         }
