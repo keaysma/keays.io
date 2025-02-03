@@ -1,22 +1,35 @@
-<footer class="flex flex-row items-center gap-2 w-full h-8 p-4 mt-8">
-        <p class="sun">✺</p>
-        <div class="w-full h-px" style="background-color: var(--t-main);"></div>
-        <p class="sun">✺</p>
-</footer>
+<footer></footer>
 
-<style>
-        /* footer {
+<style lang="scss">
+        footer {
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                display: block;
+                height: 0px;
+                width: 92%;
+                flex-direction: row;
                 align-items: center;
-                padding: 40px;
-        }
 
-        @media (min-width: 480px) {
-                footer {
-                        padding: 40px 0;
+                margin: 2em auto 1em;
+
+                border: 0.5px solid;
+                border-color: var(--t-main);
+
+                &::before,
+                &::after {
+                        display: inline;
+                        color: var(--t-main);
+                        content: "✺";
+                        margin-top: -0.775em;
                 }
-        } */
+
+                &::before {
+                        float: left;
+                        margin-left: -1.5em;
+                }
+
+                &::after {
+                        float: right;
+                        margin-right: -1.5em;
+                }
+        }
 </style>
