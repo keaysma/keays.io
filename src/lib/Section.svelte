@@ -8,10 +8,10 @@
         href?: string;
     }
 
-    let { id, children, up, down }: SvelteHTMLElements["section"] & { up?: LinkPointerProps, down?: LinkPointerProps } = $props();
+    let { id, children, up, down, ... props }: SvelteHTMLElements["section"] & { up?: LinkPointerProps, down?: LinkPointerProps } = $props();
 </script>
 
-<section {id}>
+<section {id} {...props}>
     {#if up}
         <UpLink {...up}/>
     {/if}
