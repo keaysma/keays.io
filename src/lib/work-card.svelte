@@ -12,18 +12,45 @@
     } = $props();
 </script>
 
-<div class="flex flex-col md:flex-row w-full gap-x-8 gap-y-2 md:gap-y-0">
-    <div
-        class="flex flex-col md:w-3/12 md:text-right border-b md:border-b-0 md:border-r px-4 pb-2 md:pb-0"
-        style="border-color: var(--t-main);"
-    >
-        <h4 class="text-2xl text-bold">{name}</h4>
-        <h5 class="text-sm">{company}</h5>
-        <h5 class="text-xs">{time}</h5>
-    </div>
-    <ul class="flex flex-col gap-2 md:w-9/12 px-4 md:px-0 list-disc">
+<div class="work-card">
+    <hgroup>
+        <h4>{name}</h4>
+        <h5>{company}</h5>
+        <h6>{time}</h6>
+    </hgroup>
+    <ul>
         {#each points as point}
             <li>{point}</li>
         {/each}
     </ul>
 </div>
+
+<style lang="scss">
+    .work-card {
+        display: block;
+        padding: 0.5rem 0 0 0;
+
+        h4 {
+            font-size: x-large;
+            line-height: 1.5rem;
+        }
+
+        h5 {
+            font-size: medium;
+        }
+
+        h6 {
+            font-size: small;
+            text-decoration: underline dotted;
+        }
+
+        ul {
+            list-style: disc;
+            list-style-position: inside;
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: 2em;
+        }
+    }
+</style>
