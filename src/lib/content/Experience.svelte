@@ -40,61 +40,39 @@
     ];
 </script>
 
-<Section id="experience">
-    <div
-        class="relative md:w-9/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
-    >
-        <h2>Skills</h2>
-        <div
-            class="h-px -mt-1 w-full"
-            style="background-color: var(--t-main);"
-        ></div>
-        <div class="flex flex-row flex-wrap gap-4 my-4">
-            {#each skillIcons as icon}
-                <FontAwesomeIcon
-                    {icon}
-                    class="text-6xl"
-                    style="color: var(--t-main);"
-                />
-            {/each}
-        </div>
-        <ul class="list-disc">
-            <li>System Design and Implementation Execution</li>
-            <li>Full Stack Web and Mobile Development, Responsive Design</li>
-            <li>Continuous Integration and End-to-End Test Automation</li>
-            <li>Cross Functional Team Work</li>
-            <li>Agile Development & Scrum</li>
-        </ul>
-    </div>
-    <div
-        class="relative md:w-9/12 px-4 md:px-0 mx-auto mb-8 flex flex-col items-start"
-    >
-        <h2>Work</h2>
-        <div
-            class="h-px -mt-1 w-full"
-            style="background-color: var(--t-main);"
-        ></div>
-        <div class="flex flex-col gap-8 my-4">
-            {#each experiences as experience}
-                <WorkCard {...experience} />
-            {/each}
-        </div>
-    </div>
-    <div
-        class="relative md:w-9/12 px-4 md:px-0 mx-auto flex flex-col items-start"
-    >
-        <h2>School & Certs</h2>
-        <div
-            class="h-px -mt-1 w-full"
-            style="background-color: var(--t-main);"
-        ></div>
-        <div class="flex flex-col w-full items-center gap-8 my-4 py-6">
-            {#each certs as cert}
-                <CertCard {...cert} />
-            {/each}
-        </div>
-    </div>
+<Section id="experience" format="block">
+    <h2 class="bar">Skills & Tech</h2>
+    {#each skillIcons as icon}
+        <FontAwesomeIcon {icon} class="skill" />
+    {/each}
+    <ul>
+        <li>System Design and Implementation Execution</li>
+        <li>Full Stack Web and Mobile Development, Responsive Design</li>
+        <li>Continuous Integration and End-to-End Test Automation</li>
+        <li>Cross Functional Team Work</li>
+        <li>Agile Development & Scrum</li>
+    </ul>
+
+    <h2 class="bar">Work</h2>
+    {#each experiences as experience}
+        <WorkCard {...experience} />
+    {/each}
+
+    <h2 class="bar">School & Certs</h2>
+    {#each certs as cert}
+        <CertCard {...cert} />
+    {/each}
 </Section>
 
 <style>
+    h2 {
+        /* This just provides a nice little bit of space when going to the #experiences header */
+        /* Also, this provides spacing between the sub-sections nicely, too */
+        padding-top: 1em;
+    }
+
+    ul {
+        list-style: disc;
+        list-style-position: inside;
+    }
 </style>
