@@ -1,6 +1,6 @@
 <script lang="ts">
     let {
-        name: alt,
+        name,
         image: src,
         href,
         company,
@@ -26,7 +26,7 @@
         style="background-color: var(--t-main);"
     >
         {#if src}
-            <img {src} {alt} class="h-full mx-auto" />
+            <img {src} alt={name} class="h-full mx-auto" />
         {/if}
     </div>
     <div class="flex flex-col lg:w-9/12 p-2 lg:p-0">
