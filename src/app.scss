@@ -1,4 +1,4 @@
-@import "@fontsource/fira-mono";
+@use "@fontsource/fira-mono";
 
 @tailwind base;
 @tailwind components;
@@ -109,7 +109,8 @@ h3 {
   font-size: 1em;
 }
 
-h1, h2 {
+h1,
+h2 {
   &.bar {
     position: relative;
 
@@ -127,5 +128,17 @@ h1, h2 {
 section {
   h2 {
     line-height: 1em;
+  }
+}
+
+.skill {
+  font-size: 3rem;
+  color: var(--t-main);
+
+  margin: 0.75rem;
+  margin-left: 0;
+
+  &:last-of-type {
+    margin-right: 0;
   }
 }
