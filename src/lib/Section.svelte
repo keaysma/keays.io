@@ -39,10 +39,11 @@
         min-height: 100vh;
 
         &[data-format="block"] {
+            position: relative;
             display: block;
             max-width: 60em;
             padding: 0 2em;
-            margin: 0 auto;
+            margin: auto auto;
         }
 
         &[data-format="flex"] {
