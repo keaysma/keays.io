@@ -131,6 +131,22 @@ section {
   }
 }
 
+hgroup {
+  h4 {
+    font-size: x-large;
+    line-height: 1.5rem;
+  }
+
+  h5 {
+    font-size: medium;
+  }
+
+  h6 {
+    font-size: small;
+    text-decoration: underline dotted;
+  }
+}
+
 .skill {
   font-size: 3rem;
   color: var(--t-main);
@@ -141,4 +157,15 @@ section {
   &:last-of-type {
     margin-right: 0;
   }
+}
+
+.card {
+  border: 1px solid var(--t-main);
+  box-shadow: 0 3px var(--t-main);
+  border-radius: 0.5rem;
+}
+
+.inverted-colors {
+  color: var(--bg-main);
+  background-color: var(--t-main);
 }
