@@ -126,7 +126,16 @@ export const experiences: Experience[] = [
   },
 ];
 
-export const certs = [
+export interface Cert {
+  name: string;
+  company: string;
+  time: string;
+  description?: string;
+  image: string;
+  href: string;
+}
+
+export const certs: Cert[] = [
   {
     name: "Certified Kubernetes Application Developer",
     company: "The Linux Foundation",
@@ -134,6 +143,7 @@ export const certs = [
     image:
       "https://images.credly.com/size/680x680/images/f88d800c-5261-45c6-9515-0458e31c3e16/ckad_from_cncfsite.png",
     href: "https://www.credly.com/badges/201bb205-dd47-4730-bf18-06c6945e8c80?source=linked_in_profile",
+    description: "Covered a lot of what I use today. Did NOT teach me how to fix flailing EC2 instances, real life taught me that...",
   },
   {
     name: "AWS Certified Cloud Practitioner",
@@ -150,6 +160,7 @@ export const certs = [
     image:
       "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/George_Mason_Patriots_logo.svg/1200px-George_Mason_Patriots_logo.svg.png",
     href: "",
+    description: "This is where I learned how to do database joins!",
   },
   {
     name: "International Baccalaureate Diploma",
