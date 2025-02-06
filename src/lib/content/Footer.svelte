@@ -6,8 +6,6 @@
                 display: block;
                 height: 0px;
                 width: 92%;
-                flex-direction: row;
-                align-items: center;
 
                 margin: 2em auto 1em;
 
