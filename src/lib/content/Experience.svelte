@@ -43,7 +43,7 @@
 <Section id="experience" format="block">
     <h2 class="bar">Skills & Tech</h2>
     {#each skillIcons as icon}
-        <FontAwesomeIcon {icon} class="skill" />
+        <FontAwesomeIcon {icon} class="skill svg-md" />
     {/each}
     <ul>
         <li>System Design and Implementation Execution</li>

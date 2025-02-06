@@ -177,3 +177,18 @@ hgroup {
     }
   }
 }
+
+// This is here to help with initial load popping
+svg {
+  &.svg-sm {
+    max-width: 12px;
+    max-height: 12px;
+    display: inline-block;
+  }
+
+  &.svg-md {
+    max-width: 42px;
+    max-height: 42px;
+    display: inline-block;
+  }
+}

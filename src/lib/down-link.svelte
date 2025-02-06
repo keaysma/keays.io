@@ -16,7 +16,7 @@
     class="down-link"
 >
     <span>{title}</span><br>
-    <FontAwesomeIcon {icon} />
+    <FontAwesomeIcon class="svg-sm" {icon} />
 </a>
 
 <style lang="scss">

@@ -12,7 +12,7 @@
 </script>
 
 <a href={href || `#${title}`} class="up-link">
-    <FontAwesomeIcon {icon} /><br />
+    <FontAwesomeIcon class="svg-sm" {icon} /><br />
     <span>{title}</span>
 </a>
 
