@@ -13,8 +13,23 @@
 
 <a
     href={href || `#${title}`}
-    class="flex-col items-center hidden md:flex text-xs mt-24 mx-auto z-10"
+    class="down-link"
 >
-    <span class="pb-px">{title}</span>
+    <span>{title}</span><br>
     <FontAwesomeIcon {icon} />
 </a>
+
+<style lang="scss">
+    .down-link {
+        display: block;
+        text-align: center;
+
+        padding: 4rem 0;
+
+        font-size: 0.75rem;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+</style>
