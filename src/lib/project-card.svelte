@@ -26,7 +26,7 @@
     <a
         {href}
         target="_blank"
-        class="project-card"
+        class="card project-card"
         {onmouseenter}
         {onmouseleave}
     >
@@ -40,9 +40,7 @@
         display: block;
         height: 6rem;
         padding: 0 0.5rem;
-        border: 1px solid var(--t-main);
-        box-shadow: 0 3px var(--t-main);
-        border-radius: 0.5rem;
+        
         font-size: x-large;
 
         > p {
