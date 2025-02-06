@@ -164,4 +164,16 @@ hgroup {
 .inverted-colors {
   color: var(--bg-main);
   background-color: var(--t-main);
+
+  &.interactive {
+    transition:
+      color 0.33s cubic-bezier(0.075, 0.82, 0.165, 1),
+      background-color 0.33s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &:hover {
+      color: var(--t-main);
+      background-color: var(--bg-main);
+
+    }
+  }
 }

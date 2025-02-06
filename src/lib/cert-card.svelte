@@ -15,7 +15,7 @@
         <p>{description}</p>
     {/if}
     {#if href}
-        <a class="inverted-colors" {href}>see cert →</a>
+        <a class="inverted-colors interactive" {href}>see cert →</a>
     {/if}
 </div>
 <br />
@@ -63,7 +63,9 @@
             float: right;
             padding: 0.25rem 0.5rem 0.25rem;
             margin-top: 0.25rem;
+            border: 1px solid var(--bg-main);
             border-radius: 0.5rem;
+            box-shadow: 0px 0px 0px 2px var(--t-main);
         }
 
         p {
