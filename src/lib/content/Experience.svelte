@@ -59,6 +59,7 @@
     {/each}
 
     <h2 class="bar">School & Certs</h2>
+    <br><br>
     {#each certs as cert}
         <CertCard {...cert} />
     {/each}
