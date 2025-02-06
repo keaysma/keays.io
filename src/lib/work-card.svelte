@@ -1,15 +1,7 @@
 <script lang="ts">
-    let {
-        name,
-        company,
-        time,
-        points,
-    }: {
-        name: string;
-        company: string;
-        time: string;
-        points: string[];
-    } = $props();
+    import type { Experience } from "./store";
+
+    let { name, company, time, points }: Experience = $props();
 </script>
 
 <div class="work-card">
@@ -29,20 +21,6 @@
     .work-card {
         display: block;
         padding: 0.5rem 0 0 0;
-
-        h4 {
-            font-size: x-large;
-            line-height: 1.5rem;
-        }
-
-        h5 {
-            font-size: medium;
-        }
-
-        h6 {
-            font-size: small;
-            text-decoration: underline dotted;
-        }
 
         ul {
             list-style: disc;
