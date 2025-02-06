@@ -1,54 +1,74 @@
 <script lang="ts">
-    let {
-        name,
-        image: src,
-        href,
-        company,
-        time,
-    }: {
-        name: string;
-        image: string;
-        href: string;
-        company: string;
-        time: string;
-    } = $props();
+    let { name, description, image, href, company, time }: Cert = $props();
 
-    import { FontAwesomeIcon } from "fontawesome-svelte";
-    import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+    import type { Cert } from "./store";
 </script>
 
-<div
-    class="flex flex-col lg:flex-row items-center gap-2 w-10/12 border rounded-xl"
-    style="border-color: var(--t-main); box-shadow: 0 1px var(--t-main);"
->
-    <div
-        class="w-full lg:w-24 h-24 lg:h-full p-2 rounded-t-xl lg:rounded-l-xl"
-        style="background-color: var(--t-main);"
-    >
-        {#if src}
-            <img {src} alt={name} class="h-full mx-auto" />
-        {/if}
-    </div>
-    <div class="flex flex-col lg:w-9/12 p-2 lg:p-0">
-        <h3 class="text-2xl">{name}</h3>
-        <div class="flex flex-col lg:flex-row lg:items-end lg:gap-2">
-            <h4>{company},</h4>
-            <p class="text-sm mb-px">{time}</p>
-        </div>
-    </div>
+<div class="card cert-card">
+    <div class="fake-img" style="--image-url: url({image})"></div>
+    <hgroup>
+        <h4>{name}</h4>
+        <h5>{company}</h5>
+        <h6>{time}</h6>
+    </hgroup>
+    {#if description}
+        <p>{description}</p>
+    {/if}
     {#if href}
-        <a
-            {href}
-            class="w-20 flex flex-col items-center mx-auto lg:ml-0 lg:mr-4"
-        >
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            <span>See cert</span>
-        </a>
+        <a class="inverted-colors" {href}>see cert →</a>
     {/if}
 </div>
+<br />
 
-<style>
-    img {
-        max-width: 100%;
+<style lang="scss">
+    .cert-card {
+        position: relative;
+        display: block;
+        margin: 2rem 4rem 1rem;
+        padding: 1rem 0.5rem 0.5rem 4rem;
+
+        &:has(a) {
+            padding-bottom: 2.75rem;
+        }
+
+        > .fake-img {
+            border: 1px solid var(--t-main);
+            border-radius: 0.5rem;
+
+            position: absolute;
+            top: -3rem;
+            left: -3rem;
+            width: 6rem;
+            height: 6rem;
+
+            --a: #b5d5d445;
+            --b: #b5d5d415;
+            --c: #38475a35;
+            --d: #ffffff02;
+
+            background:
+                var(--image-url) center / 85% no-repeat,
+                linear-gradient(135deg, var(--a) 25%, var(--d) 25%) -10px 0/
+                    20px 20px,
+                linear-gradient(225deg, var(--b) 25%, var(--d) 25%) -10px 0/
+                    20px 20px,
+                linear-gradient(315deg, var(--a) 25%, var(--d) 25%) 0px 0/ 20px
+                    20px,
+                linear-gradient(45deg, var(--b) 25%, var(--c) 25%) 0px 0/ 20px
+                    20px,
+                var(--bg-main);
+        }
+
+        a {
+            float: right;
+            padding: 0.25rem 0.5rem 0.25rem;
+            margin-top: 0.25rem;
+            border-radius: 0.5rem;
+        }
+
+        p {
+            margin-top: 5px;
+            font-size: small;
+        }
     }
 </style>
