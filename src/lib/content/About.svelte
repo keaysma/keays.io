@@ -2,11 +2,7 @@
     import Section from "$lib/Section.svelte";
 </script>
 
-<Section
-    id="about"
-    up={{ title: "home" }}
-    down={{ title: "projects" }}
->
+<Section id="about" up={{ title: "home" }} down={{ title: "projects" }}>
     <h2>Who is Michael?</h2>
     <p class="text-content">
         Purpose, Passion, Patience <br />
@@ -27,8 +23,23 @@
 
 <style lang="scss">
     h2 {
+        margin-bottom: 0.5rem;
+
+        // Maybe?
+        /*
+        &::first-letter {
+            color: var(--bg-main);
+            background-color: var(--t-main);
+            border-radius: 0.2rem;
+            padding-left: 0.2rem;
+        }
+        */
+        
         @media (max-width: 768px) {
-            font-size: 3.75em
+            text-align: left;
+            font-size: 3rem;
+            width: 550px;
+            max-width: 90%;
         }
     }
 

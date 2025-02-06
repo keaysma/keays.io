@@ -28,7 +28,7 @@
         }
 
         &:not(:last-of-type) {
-            margin-bottom: 2em;
+            margin-bottom: 2rem;
         }
     }
 </style>

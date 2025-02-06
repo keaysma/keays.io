@@ -41,8 +41,8 @@
         &[data-format="block"] {
             position: relative;
             display: block;
-            max-width: 60em;
-            padding: 0 2em;
+            max-width: 60rem;
+            padding: 0 2rem;
             margin: auto auto;
         }
 

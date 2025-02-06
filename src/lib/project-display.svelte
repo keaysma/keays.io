@@ -14,7 +14,7 @@
 
 <style lang="scss">
     h3 {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     p {

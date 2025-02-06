@@ -29,14 +29,14 @@
 <style lang="scss">
     h1 {
         font-size: 8rem;
-        line-height: 1em;
+        line-height: 8rem;
 
         @media (max-width: 768px) {
             font-size: 4.5rem;
         }
     }
     menu {
-        width: 17.5em;
+        width: 17.5rem;
         transform: translate(-8em, -0.5em);
         border-top: 2px solid var(--t-main);
 
@@ -55,7 +55,7 @@
 
         &.top {
             left: 0;
-            top: 2.5em;
+            top: 2.5rem;
 
             > .sun {
                 float: right;
@@ -64,7 +64,7 @@
 
         &.bottom {
             right: 0;
-            bottom: 2.5em;
+            bottom: 2.5rem;
 
             > .sun {
                 float: left;
@@ -83,7 +83,7 @@
             display: inline-block;
             margin: auto 5px;
             height: 32px;
-            line-height: 2.05em;
+            line-height: 2.05rem;
         }
     }
 </style>

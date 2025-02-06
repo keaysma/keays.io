@@ -3,6 +3,7 @@ import { writable } from "svelte/store";
 export const currentProjectId = writable<number>(undefined);
 
 export interface Project {
+  hidden?: boolean;
   title: string;
   href: string;
   brief: string;

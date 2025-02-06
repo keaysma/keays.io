@@ -69,7 +69,7 @@
     h2 {
         /* This just provides a nice little bit of space when going to the #experiences header */
         /* Also, this provides spacing between the sub-sections nicely, too */
-        padding-top: 1em;
+        padding-top: 3rem;
     }
 
     ul {

@@ -33,7 +33,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         padding: 0.5em 0;
-        gap: 1em;
+        gap: 1rem;
 
         @media (max-width: 768px) {
             grid-template-columns: 1fr;
@@ -44,7 +44,7 @@
             display: grid;
             width: 100%;
             grid-template-columns: 1fr 1fr;
-            gap: 0.5em;
+            gap: 1rem;
 
             @media (max-width: 768px) {
                 grid-template-columns: 1fr;
