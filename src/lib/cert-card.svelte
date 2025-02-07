@@ -89,6 +89,10 @@
             &.image-full {
                 background: var(--image-url) center / 100% no-repeat;
             }
+
+            &.image-full-white {
+                background: var(--background-image) #FFF;
+            }
         }
 
         a {
