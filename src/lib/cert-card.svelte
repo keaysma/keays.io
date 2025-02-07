@@ -1,11 +1,22 @@
 <script lang="ts">
-    let { name, description, image, href, company, time }: Cert = $props();
+    let {
+        name,
+        description,
+        image,
+        imageAdditionalClass,
+        href,
+        company,
+        time,
+    }: Cert = $props();
 
     import type { Cert } from "./store";
 </script>
 
 <div class="card cert-card">
-    <div class="fake-img" style="--image-url: url({image})"></div>
+    <div
+        class="fake-img {imageAdditionalClass}"
+        style="--image-url: url({image})"
+    ></div>
     <hgroup>
         <h4>{name}</h4>
         <h5>{company}</h5>
@@ -41,22 +52,43 @@
             width: 6rem;
             height: 6rem;
 
-            --a: #b5d5d445;
+            --a: #b5d5d425;
             --b: #b5d5d415;
-            --c: #38475a35;
+            --c: #38475a15;
             --d: #ffffff02;
 
-            background:
-                var(--image-url) center / 85% no-repeat,
-                linear-gradient(135deg, var(--a) 25%, var(--d) 25%) -10px 0/
-                    20px 20px,
+            --background-image: var(--image-url) center / 85% no-repeat;
+            --background-gradient: linear-gradient(
+                        135deg,
+                        var(--a) 25%,
+                        var(--d) 25%
+                    ) -10px
+                    0/ 20px 20px,
                 linear-gradient(225deg, var(--b) 25%, var(--d) 25%) -10px 0/
                     20px 20px,
                 linear-gradient(315deg, var(--a) 25%, var(--d) 25%) 0px 0/ 20px
                     20px,
                 linear-gradient(45deg, var(--b) 25%, var(--c) 25%) 0px 0/ 20px
-                    20px,
-                var(--bg-main);
+                    20px;
+            --background-color: var(--bg-main);
+
+            background: var(--background-image), var(--background-gradient),
+                var(--background-color);
+
+            &.bg-circle {
+                --c1: #f5f8fbfa;
+                --background-image-background: radial-gradient(
+                    var(--c1) 60%,
+                    transparent 60%
+                );
+                background: var(--background-image),
+                    var(--background-image-background),
+                    var(--background-gradient), var(--background-color);
+            }
+
+            &.image-full {
+                background: var(--image-url) center / 100% no-repeat;
+            }
         }
 
         a {

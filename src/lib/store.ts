@@ -133,6 +133,7 @@ export interface Cert {
   time: string;
   description?: string;
   image: string;
+  imageAdditionalClass?: string;
   href: string;
 }
 
@@ -141,8 +142,7 @@ export const certs: Cert[] = [
     name: "Certified Kubernetes Application Developer",
     company: "The Linux Foundation",
     time: "January 2022 - January 2025",
-    image:
-      "https://images.credly.com/size/680x680/images/f88d800c-5261-45c6-9515-0458e31c3e16/ckad_from_cncfsite.png",
+    image: "https://images.credly.com/size/680x680/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob",
     href: "https://www.credly.com/badges/201bb205-dd47-4730-bf18-06c6945e8c80?source=linked_in_profile",
     description: "Covered a lot of what I use today. Did NOT teach me how to fix flailing EC2 instances, real life taught me that...",
   },
@@ -150,16 +150,15 @@ export const certs: Cert[] = [
     name: "AWS Certified Cloud Practitioner",
     company: "Amazon Web Services",
     time: "October 2020 - October 2023",
-    image:
-      "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+    image: "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
     href: "https://www.credly.com/badges/7d73c9f1-deed-42f3-a096-87e586feafcb?source=linked_in_profile",
   },
   {
     name: "Computer Science, B.S., Linguistics Minor",
     company: "George Mason University",
     time: "August 2015 - May 2019",
-    image:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/George_Mason_Patriots_logo.svg/1200px-George_Mason_Patriots_logo.svg.png",
+    image: "/GMU_Logo.jpg",
+    imageAdditionalClass: "image-full",
     href: "",
     description: "This is where I learned how to do database joins!",
   },
@@ -167,8 +166,8 @@ export const certs: Cert[] = [
     name: "International Baccalaureate Diploma",
     company: "George C. Marshall Highschool",
     time: "August 2011 - May 2015",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/International_Baccalaureate_Logo.svg/1200px-International_Baccalaureate_Logo.svg.png",
+    image: "/International_Baccalaureate_Logo.png",
+    imageAdditionalClass: "bg-circle",
     href: "",
   },
 ];
