@@ -29,7 +29,10 @@
 <style lang="scss">
     h1 {
         font-size: 8rem;
-        line-height: 8rem;
+
+        // This em is intentional:
+        // Matches the font-size of the h1
+        line-height: 1em;
 
         @media (max-width: 768px) {
             font-size: 4.5rem;
