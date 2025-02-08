@@ -17,7 +17,9 @@
         <!-- List -->
         <ul class="projects-list">
             {#each projects as project, i}
-                <ProjectCard id={i} {...project} />
+                {#if !project.hidden}
+                    <ProjectCard id={i} {...project} />
+                {/if}
             {/each}
         </ul>
 
