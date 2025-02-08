@@ -9,7 +9,7 @@
     <h3>{project.title}</h3>
     <p>{project.description}</p>
 {:else}
-    <div></div>
+    <p class="placeholder">Click on a card to learn more</p>
 {/if}
 
 <style lang="scss">
@@ -17,7 +17,7 @@
         font-size: 2rem;
     }
 
-    p {
+    h3 + p {
         font-size: small;
     }
 </style>

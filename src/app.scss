@@ -153,6 +153,20 @@ hgroup {
   }
 }
 
+.display-wrapper:has(> .placeholder) {
+  background:
+    radial-gradient(transparent 0%, var(--bg-main) 40%) 50% -270px/ 200% 200%,
+    repeating-linear-gradient(45deg,
+      color-mix(in srgb, var(--bg-main) 10%, transparent) 0px,
+      color-mix(in srgb, var(--t-main) 80%, transparent) 0.9px,
+      var(--bg-main) 0,
+      var(--bg-main) 50%) 0 0 / 9px 9px repeat;
+
+  >.placeholder {
+    text-align: center;
+  }
+}
+
 .card {
   border: 1px solid var(--t-main);
   box-shadow: 0 3px var(--t-main);
