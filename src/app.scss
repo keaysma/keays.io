@@ -186,6 +186,14 @@ hr {
     &:hover {
       box-shadow: 0 6px var(--t-main);
     }
+
+    &.inverted-colors {
+      border: 1px solid var(--bg-main);
+      border-bottom-width: 4px;
+      box-shadow:
+        0 0px 0 2px var(--t-main),
+        0 4px 0 2px var(--t-main);
+    }
   }
 }
 
@@ -225,5 +233,14 @@ svg {
     max-height: 64px;
     display: inline-block;
     font-size: 1.25rem;
+  }
+}
+
+// Prevents scrolling when there is
+// A close modal button on the screen
+// Implies a modal is open
+@media (max-width: 768px) {
+  html:has(.modal-close-button) {
+    overflow: hidden;
   }
 }

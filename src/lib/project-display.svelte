@@ -13,7 +13,7 @@
 
 {#if project}
     <h3>{project.title}</h3>
-    <button class="close-button" onclick={mobileClose}>
+    <button class="modal-close-button" onclick={mobileClose}>
         <FontAwesomeIcon class="svg-lg" icon={faX} />
     </button>
     <p>{project.description}</p>
@@ -50,16 +50,20 @@
         margin-bottom: 0.5rem;
     }
 
-    h3 + p {
-        font-size: small;
-    }
-
-    button.close-button {
+    button.modal-close-button {
         display: none;
         position: fixed;
-        top: 4.25rem;
+        top: 3.5rem;
         right: 3rem;
+
         color: var(--t-main);
+        line-height: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.25rem;
+
+        border: 1px solid var(--t-main);
+        border-radius: 2rem;
 
         @media (max-width: 768px) {
             display: block;

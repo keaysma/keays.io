@@ -6,7 +6,7 @@
     let currentProjectIdValue: number | undefined = $state();
     currentProjectId.subscribe((val) => (currentProjectIdValue = val));
 
-    const onmousedown = () => {
+    const onclick = () => {
         currentProjectId.set(id);
     };
 </script>
@@ -16,7 +16,7 @@
         aria-roledescription="more"
         class="card project-card"
         class:inverted-colors={currentProjectIdValue === id}
-        {onmousedown}
+        {onclick}
     >
         <h3>{title}</h3>
         <p>{brief}</p>
@@ -38,22 +38,6 @@
             font-size: 0.875rem;
             line-height: 1.25rem;
             color: inherit;
-        }
-
-        // Re-replicates the hover affect,
-        // Allows the border to work as sort of an "inset"
-        &.inverted-colors {
-            border: 1px solid var(--bg-main);
-            border-bottom-width: 4px;
-            box-shadow:
-                0 0px 0 2px var(--t-main),
-                0 1px 0 2px var(--t-main);
-
-            &:hover {
-                box-shadow:
-                    0 0px 0 2px var(--t-main),
-                    0 4px 0 2px var(--t-main);
-            }
         }
 
         // I once was an anchor, not a button
