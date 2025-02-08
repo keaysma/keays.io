@@ -32,6 +32,7 @@
 
 <style lang="scss">
     .projects-frame {
+        position: relative;
         display: grid;
         grid-template-columns: 2fr 1fr;
         padding: 0.5em 0;
@@ -45,6 +46,7 @@
             position: relative;
             display: grid;
             width: 100%;
+            height: min-content;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
 
@@ -54,7 +56,15 @@
         }
 
         > .display-wrapper {
+            position: relative;
             display: block;
+
+            // works on the condition that
+            // the descriptions are relatively short
+            // and only ever pass the intrinsict height limit
+            // by a little bit (like 5-60px max)
+            height: 0;
+            overflow: visible;
 
             @media (max-width: 768px) {
                 display: none;

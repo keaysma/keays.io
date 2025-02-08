@@ -141,6 +141,10 @@ hgroup {
   }
 }
 
+hr {
+  border-color: var(--t-main);
+}
+
 .skill {
   font-size: 3rem;
   color: var(--t-main);
@@ -171,6 +175,14 @@ hgroup {
   border: 1px solid var(--t-main);
   box-shadow: 0 3px var(--t-main);
   border-radius: 0.5rem;
+
+  &:is(button) {
+    transition: box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &:hover {
+      box-shadow: 0 8px var(--t-main);
+    }
+  }
 }
 
 .inverted-colors {
