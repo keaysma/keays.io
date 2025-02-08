@@ -27,6 +27,14 @@ export const projects: Project[] = [
       "GigNote is an active project that gets daily updates. This is the biggest project I've ever worked on. GigNote is built using NextJS on the frontend, and two service, written in Flask and Express respectively, on the backend. The datastore is MongoDB, and the site is hosted on a blend of Vercel (Frontend), fly.io (Backend), and Atlast (Database). I am co-leading a team of 4 currently, which has played a key part in making the progress we have thus far possible.",
   },
   {
+    hidden: true,
+    title: "Etude",
+    href: "https://gignote.io",
+    brief: "A real-time chat service that integrates with GigNote",
+    description:
+      "",
+  },
+  {
     title: "fiarfli.art",
     href: "https://fiarfli.art",
     brief: "My girlfriend's portfolio! ",
@@ -34,6 +42,49 @@ export const projects: Project[] = [
       "This is an ongoing collaborative effort, changes are typically made on a monthly basis. The frontend is written in Vue, managed using AstroJS, and hosted on Vercel. There's an admin dashboard which my girlfiend uses to upload art and links. The data store for the art and descriptions is the github repo! There's a service hosted on fly.io which handles automated image compression and git commits when updates are submitted.",
   },
   {
+    hidden: true,
+    title: "Artifacts MMO Client",
+    href: "https://github.com/keaysma/artifactsmmo.com",
+    brief: "",
+    description: "",
+  },
+  {
+    title: "Today.",
+    href: "https://today.keays.io",
+    brief: "A todo list with just the stuff I want.",
+    description:
+      "I got really frustrated with how I can't find a todo app the does *exactly* what I want, so, I have put together plans to build my own. This is on my... todo list, I haven't started putting down any code yet, just planning. For the frontend, I'm planning on building this in Svelte as a means of building up my understanding of the framework's data management and API request tools.",
+  },
+  {
+    hidden: true,
+    title: "BlueSky PDS for Production",
+    href: "https://github.com/keaysma/pds-fly.io-template",
+    brief: "This is a quick write-up I did on how to host a blueksy PDS for free",
+    description: "",
+  },
+  {
+    hidden: true,
+    title: "ATProto Polls Proposal",
+    href: "",
+    brief: "",
+    description: "",
+  },
+  {
+    hidden: true,
+    title: "sheeta.dog",
+    href: "https://github.com/keaysma/sheeta.dog",
+    brief: "",
+    description: "",
+  },
+  {
+    hidden: true,
+    title: "My RSS App",
+    href: "https://github.com/keaysma/rss-app",
+    brief: "",
+    description: "",
+  },
+  {
+    hidden: true,
     title: "X-Bar",
     href: "https://syntax.keays.io",
     brief: "X-bar syntax decomposition tool.",
@@ -56,13 +107,7 @@ export const projects: Project[] = [
       "I wrote it entirely in x64 assembly. This project was largely how I got familiar with low level and OS concepts. I've paused working on it indefinitely, but, would like to come back to it with fresh eyes someday.",
   },
   {
-    title: "Toodo",
-    href: "https://toodo.keays.io",
-    brief: "A todo list with just the stuff I want.",
-    description:
-      "I got really frustrated with how I can't find a todo app the does *exactly* what I want, so, I have put together plans to build my own. This is on my... todo list, I haven't started putting down any code yet, just planning. For the frontend, I'm planning on building this in Svelte as a means of building up my understanding of the framework's data management and API request tools.",
-  },
-  {
+    hidden: true,
     title: "Cookr",
     href: "https://github.com/keaysma/cookr",
     brief: "Basically Madlibs for cooking, in an app.",
@@ -70,6 +115,7 @@ export const projects: Project[] = [
       "This was a fun little app I made during my college days. Originally I spun this up as an Android-only mobile app. That was a few years ago, and since then, Google took it down because it didn't have a privacy policy :(. I took some time to make another version of it in C++ a while back while getting familiar with the language. Cookr is one of my go-to 'hello world' projects, I'll likely re-implement it several times in the future.",
   },
   {
+    hidden: true,
     title: "rusty-calc",
     href: "https://github.com/keaysma/rusty-calc",
     brief: "",
@@ -144,7 +190,7 @@ export const certs: Cert[] = [
     time: "January 2022 - January 2025",
     image: "https://images.credly.com/size/680x680/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob",
     href: "https://www.credly.com/badges/201bb205-dd47-4730-bf18-06c6945e8c80?source=linked_in_profile",
-    description: "Covered a lot of what I use today. Did NOT teach me how to fix flailing EC2 instances, real life taught me that...",
+    // description: "Covered a lot of what I use today. Did NOT teach me how to fix flailing EC2 instances, real life taught me that...",
   },
   {
     name: "AWS Certified Cloud Practitioner",
@@ -159,15 +205,19 @@ export const certs: Cert[] = [
     time: "August 2015 - May 2019",
     image: "/GMU_Logo.jpg",
     imageAdditionalClass: "image-full",
+    // image: "/George_Mason_University_logo.png",
+    // imageAdditionalClass: "image-full-white",
     href: "",
-    description: "This is where I learned how to do database joins!",
+    // description: "This is where I learned how to do database joins!",
+    description: "Studied ethical hacking, operating systems, physics, statistics, and, machine learning. Graduated with a 3.8.",
   },
   {
-    name: "International Baccalaureate Diploma",
+    name: "International Baccalaureate Diploma Program",
     company: "George C. Marshall Highschool",
     time: "August 2011 - May 2015",
     image: "/International_Baccalaureate_Logo.png",
     imageAdditionalClass: "bg-circle",
     href: "",
+    description: "High School curriculum with collegant elements. If you're familiar with AP, it's somewhat similar, but, with a greater focus on international studies, and requires a thesis. I did mine on the E-Voting system in Estonia in 2015.",
   },
 ];
