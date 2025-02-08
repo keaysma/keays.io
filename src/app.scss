@@ -169,6 +169,10 @@ hr {
   >.placeholder {
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .card {
@@ -214,5 +218,12 @@ svg {
     max-width: 42px;
     max-height: 42px;
     display: inline-block;
+  }
+
+  &.svg-lg {
+    max-width: 64px;
+    max-height: 64px;
+    display: inline-block;
+    font-size: 1.25rem;
   }
 }

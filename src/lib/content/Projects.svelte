@@ -57,17 +57,36 @@
 
         > .display-wrapper {
             position: relative;
-            display: block;
+            // display: block;
 
             // works on the condition that
             // the descriptions are relatively short
             // and only ever pass the intrinsict height limit
             // by a little bit (like 5-60px max)
-            height: 0;
+            height: 24rem;
+            min-height: 50vh;
             overflow: visible;
 
             @media (max-width: 768px) {
-                display: none;
+                &:not(:has(.placeholder)) {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+
+                    width: 100vw;
+                    height: 100vh;
+
+                    z-index: 10;
+
+                    padding: 4rem 2rem;
+
+                    background: color-mix(
+                        in srgb,
+                        var(--bg-main) 90%,
+                        transparent
+                    );
+                    backdrop-filter: blur(5px);
+                }
             }
         }
     }
