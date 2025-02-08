@@ -44,14 +44,15 @@
         // Allows the border to work as sort of an "inset"
         &.inverted-colors {
             border: 1px solid var(--bg-main);
+            border-bottom-width: 4px;
             box-shadow:
                 0 0px 0 2px var(--t-main),
-                0 3px 0 2px var(--t-main);
+                0 1px 0 2px var(--t-main);
 
             &:hover {
                 box-shadow:
-                0 0px 0 2px var(--t-main),
-                0 8px 0 2px var(--t-main);
+                    0 0px 0 2px var(--t-main),
+                    0 4px 0 2px var(--t-main);
             }
         }
 
