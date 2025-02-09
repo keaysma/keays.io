@@ -86,7 +86,8 @@ h5,
 h6,
 p,
 a,
-li {
+li,
+figure {
   color: var(--t-main);
 }
 
@@ -147,7 +148,6 @@ hr {
 
 .skill {
   font-size: 3rem;
-  color: var(--t-main);
 
   margin: 0.75rem;
   margin-left: 0;
@@ -214,25 +214,38 @@ hr {
   }
 }
 
-// This is here to help with initial load popping
+figure {
+  svg {
+    width: 2em;
+    height: 2em;
+    margin: 0 auto;
+  }
+}
+
 svg {
+  stroke: var(--t-main);
+  fill: var(--t-main);
+
+  // This is here to help with initial load popping
   &.svg-sm {
-    max-width: 12px;
-    max-height: 12px;
+    max-width: 1em;
+    max-height: 1em;
     display: inline-block;
+    line-height: 1em;
   }
 
   &.svg-md {
-    max-width: 42px;
-    max-height: 42px;
+    max-width: 1.5em;
+    max-height: 1.5em;
     display: inline-block;
+    line-height: 1em;
   }
 
   &.svg-lg {
-    max-width: 64px;
-    max-height: 64px;
+    width: 2em;
+    height: 2em;
     display: inline-block;
-    font-size: 1.25rem;
+    line-height: 1em;
   }
 }
 
