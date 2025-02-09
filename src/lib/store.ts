@@ -187,13 +187,27 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    name: "Software Engineer, Operations",
+    company: "Pattern Research",
+    time: "March 2023 - Present",
+    points: [
+      "Planned, developed, implementend and maintained services written in Rust, Python, and Vue",
+      "Services I worked on are used for Market and Trading analysis, as well as inter-exchange account transfers that range up to $1M USD per day",
+      "Development and maintenance of development and deployment CI, as well as production infrastructure hosted on EKS",
+      "Working with internal end users to build short term features, and prepare a long term firm vision for our services",
+      "Took a lead role in compute resource cost management, as well as engineer mentorship and time management"
+    ],
+  },
+  {
     name: "Full Stack Software Engineer",
     company: "Unit21",
-    time: "February 2022 - Present",
+    time: "February 2022 - March 2023",
     points: [
-      "Designing and implementing case management solutions",
-      "Designing, implementing, and maintaining several microservices, with attention to security, performance at scale, and maintainability",
+      "Designed and implemented features for fraud identification and case management solutions",
+      "Designed, implemented, and maintained a number of microservices, with attention to security, performance at scale, and maintainability",
+      "Co-lead a redesign, and implementation of our government reporting pipeline, shipped with issue detection and performance monitoring",
       "Triaging and resolving urgent customer issues, particularly regarding data integrity",
+      "Leading cross-team coordination to ensure good customer communication and careful problem resolution",
     ],
   },
   {
@@ -201,10 +215,10 @@ export const experiences: Experience[] = [
     company: "MicroStrategy",
     time: "August 2019 - February 2022",
     points: [
-      "Architecting and executing performance tests focused on multiple core server functionalities",
-      "Designing and executing automated stability, security, and functionality tests",
-      "Developing and maintaining security automation for native web systems",
-      "Maintaining existing testing infrastructure in company-wide CI/CD pipelines",
+      "Designed and executed performance test suites focused on multiple core MSTR server functionalities",
+      "Designed and and implemtended automated test pipelines for stability, security, and functionality tests",
+      "Developed and maintained end-to-end security automation for TLS functionality for a large range of different operating systems",
+      "Maintained existing testing infrastructure in company-wide CI/CD pipelines",
     ],
   },
   {
@@ -222,7 +236,7 @@ export const experiences: Experience[] = [
     company: "Stem ExCEL",
     time: "April 2016 - August 2018",
     points: [
-      "Teaching elementary school-grade children skills in computer game design, programming, and electrical engineering",
+      "Taught elementary and middle school children skills in computer game design, programming, and electrical engineering",
     ],
   },
 ];
