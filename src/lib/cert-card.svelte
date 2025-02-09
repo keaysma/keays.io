@@ -35,8 +35,13 @@
     .cert-card {
         position: relative;
         display: block;
-        margin: 2rem 4rem 1rem;
+        margin: 2rem 1rem 1rem 4rem;
         padding: 1rem 0.5rem 0.5rem 4rem;
+
+        @media (max-width: 768px) {
+            margin-left: 2rem;
+            margin-right: -0.5rem;
+        }
 
         &:has(a) {
             padding-bottom: 2.75rem;

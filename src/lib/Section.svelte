@@ -42,7 +42,7 @@
             position: relative;
             display: block;
             max-width: 60rem;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
             margin: auto auto;
         }
 
