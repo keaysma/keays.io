@@ -7,8 +7,6 @@
         faNodeJs,
         faJava,
         faRust,
-        faGit,
-        faJenkins,
         faAws,
         faDocker,
         faUnity,
