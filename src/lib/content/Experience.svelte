@@ -25,6 +25,7 @@
     import svelte from "$lib/icons/svelte.svg?raw";
     import kubernetes from "$lib/icons/kubernetes.svg?raw";
     import eks from "$lib/icons/eks.svg?raw";
+    import linux from "$lib/icons/linux.svg?raw";
 
     type Icon =
         | {
@@ -52,6 +53,7 @@
         { type: "raw", icon: eks, alt: "EKS" },
         { type: "fa", icon: faAws },
         { type: "fa", icon: faUnity },
+        { type: "raw", icon: linux, alt: "and more!" },
     ];
 </script>
 
@@ -74,10 +76,11 @@
     {/each}
     <ul>
         <li>Feature & Project Ownership: Capacity Planning, Risk Assessment</li>
-        <li>System Design, Implementation, and Execution</li>
+        <li>End to End Software Dev: System Design, Implementation, and Execution</li>
         <li>Full Stack Web Dev: Responsive Design, Scalable Services, and Database Architecture</li>
         <li>Continuous Integration and End-to-End Test Automation</li>
-        <li>Cross Functional Team Work</li>
+        <li>Cross Functional Team Work, Front-facing customer communications</li>
+        <li>Familiar with (loves!) fast pace and small teams</li>
     </ul>
 
     <h2 class="bar">Work</h2>
