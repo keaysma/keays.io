@@ -22,7 +22,7 @@
 % http://en.wikibooks.org/wiki/LaTeX
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+\documentclass[paper=a4,fontsize=9pt]{scrartcl} % KOMA-article class
 							
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
@@ -31,7 +31,7 @@
 \usepackage{graphicx}                    % Enable pdflatex
 \usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
 \usepackage{geometry}
-	\textheight=700px                    % Saving trees ;-)
+	\textheight=720px                    % Saving trees ;-)
 \usepackage{url}
 
 \frenchspacing              % Better looking spacings after periods
@@ -49,7 +49,7 @@
 %%% ------------------------------------------------------------
 \newlength{\spacebox}
 \settowidth{\spacebox}{8888888888}			% Box to align text
-\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+\newcommand{\sepspace}{\vspace*{0.5em}}		% Vertical space macro
 
 \newcommand{\MyName}[1]{ % Name
 		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
@@ -100,15 +100,15 @@
 %\end{wrapfigure}
 
 \MyName{Michael-Andrew Keays}
-\MySlogan{Robot Overlord}
+\MySlogan{Single Threaded Event Loop Enjoyer}
 
-\sepspace
+% \sepspace
 
 %%% Personal details
 %%% ------------------------------------------------------------
-\NewPart{Personal details}{}
+\NewPart{Personal details}
 
-\PersonalEntry{Address}{Alexandria, Virginia}
+\PersonalEntry{Address}{Astoria, Queens}
 \PersonalEntry{Phone}{703-915-4386}
 \PersonalEntry{E-mail}{\url{m@keays.io}}
 
@@ -117,12 +117,26 @@
 \NewPart{Work Experiences}{}
 
 \WorkEntry
+    {Software Engineer, Operations}
+    {March 2023 - Present}
+    {Pattern Research}
+    {- Developed, implementend and maintaining services written in Rust, Python, and Vue\\
+    - Services for Trading analysis, as well as inter-exchange account transfers that range up to \$1M USD per day\\
+    - Development and maintenance of development and deployment CI, as well as production infrastructure hosted on EKS\\
+    - Working with internal end users to build short term features, and prepare a long term firm vision for our services\\
+    - Lead role in AWS cost management, as well as engineer mentorship and time management}
+
+\sepspace
+
+\WorkEntry
     {Fullstack Software Engineer}
-    {February 2021 - Present}
+    {February 2021 - March 2023}
     {Unit21}
-    {- Designing and implementing case management solutions\\
-    - Designing, implementing, and maintaining several microservices, with attention to security, performance at scale, and maintainability\\
-    - Triaging and resolving urgent customer issues, particularly regarding data integrity}
+    {- Designed and implemented features for fraud identification and case management solutions\\
+    - Designed, implemented, and maintained a number of microservices, with attention to security, performance at scale, and maintainability\\
+    - Co-lead a redesign, and implemented of our government reporting pipeline, shipped with issue detection and performance monitoring\\
+    - Triaging and resolving urgent customer issues, particularly regarding data integrity\\
+    - Leading cross-team coordination to ensure good customer communication and careful problem resolution}
 
 \sepspace
 
@@ -130,10 +144,10 @@
     {Quality Engineer}
     {August 2019 - February 2022}
     {MicroStrategy}
-    {- Architecting and executing performance tests focused on multiple core server functionalities\\
-    - Designing and executing automated stability, security, and functionality tests\\
-    - Developing and maintaining security automation for native web systems\\
-    - Maintaining existing testing infrastructure in company-wide CI/CD pipelines}
+    {- Designed and executed performance test suites focused on multiple core MSTR server functionalities\\
+    - Designed and and implemtended automated test pipelines for stability, security, and functionality tests\\
+    - Developed and maintained end-to-end security automation for TLS functionality for a large range of different operating systems\\
+    - Maintained existing testing infrastructure in company-wide CI/CD pipelines}
 
 \sepspace
 
@@ -151,11 +165,11 @@
     {Aftershool Teacher, Lead}
     {April 2016 - August 2018}
     {Stem ExCEL}
-    {- Teaching elementary school-grade children skills in computer game design, programming, and electrical engineering}
+    {- Taught elementary and middle school children skills in computer game design, programming, and electrical engineering}
 
 %%% Certifications
 %%% ------------------------------------------------------------
-\NewPart{Certifications}{}
+\NewPart{Certifications}
 
 \WorkEntry
     {Certified Kubernetes Application Developer}
@@ -171,7 +185,7 @@
 
 %%% Education
 %%% ------------------------------------------------------------
-\NewPart{Education}{}
+\NewPart{Education}
 
 \EducationEntry
     {Computer Science, B.S., Linguistics Minor}
