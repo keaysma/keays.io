@@ -16,7 +16,7 @@
     <button class="modal-close-button" onclick={mobileClose}>
         <FontAwesomeIcon class="svg-lg" icon={faX} />
     </button>
-    <p>{project.description}</p>
+    <p>{@html project.description}</p>
     {#if project.links}
         <hr />
         <ul>
@@ -78,7 +78,7 @@
     }
 
     ul > li {
-        margin-top: 0.75rem;
+        margin-top: 0.5rem;
         > a {
             &:hover > p,
             span {
@@ -90,7 +90,7 @@
             }
 
             p {
-                line-height: 6px;
+                line-height: 0.5rem;
             }
         }
     }
