@@ -120,6 +120,25 @@ h2 {
   }
 }
 
+p {
+  a {
+    text-decoration: underline;
+    &::before {
+      content: "🔗 ";
+    }
+  }
+
+  img {
+    width: 8em;
+    margin: 0 auto;
+  }
+
+  strong {
+    filter: sepia(1);
+    text-decoration: underline;
+  }
+}
+
 section {
   h2 {
     line-height: 3.75rem;

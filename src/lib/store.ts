@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     title: "keays.io",
     brief: "You are here!",
-    description: "This website is about... me, and, I like to redo it every few years to practice my skills and learn new things. The first iteration was written using pure HTML & jQuery. The second was written in React, using the Preact framework, and the current iteration is written using SvleteKit.",
+    description: "This is... this! I like to redo this site every few years to practice my skills and learn new things. The first iteration was written using pure HTML & jQuery. The second was written in <strong>React</strong>, using the <strong>Preact</strong> framework, and the current iteration is written using <strong>SvleteKit</strong>. The latest iteration to this is still using SvelteKit, but I have focused on CSS and JavaScript minimalism: Turning out a majority of the original 3rd party tools for as much pure HTML & CSS as possible, and upgrading to Svelte 5 while using <strong>Vite</strong> and <strong>Deno</strong>.",
     links: [
       {
         href: "https://github.com/keaysma/keays.io",
@@ -25,9 +25,19 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "fiarfli.art",
+    brief: "My fiance's portfolio! ",
+    description: "This is an ongoing collaborative project between the two of us. Changes are typically made on a monthly basis. The frontend is written in <strong>Vue</strong>, managed using <strong>AstroJS</strong>, and hosted on <strong>Vercel</strong>. I designed an admin dashboard which my girlfiend uses to upload art and links, which then go to a <strong>Rails</strong>-based admin service. The admin service is hosted on <strong>fly.io</strong>, and it handles files compression, thumbnail generation, repacking of images into the WEBP format, and git commits when updates are submitted. The data store for the art and descriptions is the github repo itself!",
+    links: [
+      {
+        href: "https://fiarfli.art",
+      },
+    ],
+  },
+  {
     title: "GigNote",
     brief: "A webplatform for amature musicians - Built by musicians, for musicians.",
-    description: "GigNote is an active project that gets daily updates. This is the biggest project I've ever worked on. GigNote is built using NextJS on the frontend, and two service, written in Flask and Express respectively, on the backend. The datastore is MongoDB, and the site is hosted on a blend of Vercel (Frontend), fly.io (Backend), and Atlast (Database). I am co-leading a team of 4 currently, which has played a key part in making the progress we have thus far possible.",
+    description: "This is the biggest project I've ever worked on. GigNote is built using <strong>NextJS</strong> on the frontend, and two service, written in <strong>Flask</strong> and <strong>ExpressJS</strong> respectively, on the backend. The datastore is <strong>MongoDB</strong>, and the site is hosted on a blend of <strong>Vercel</strong> (Frontend), <strong>fly.io</strong> (Backend), and <strong>Atlast</strong> (Database). All of the services where once hosted on <strong>Heroku</strong>, but we migrated when they got rid of their free tier. With my Co-lead, we are a team of 4 people working on this project: 2 software engineers, 1 designer and 1 entrepeneur.",
     links: [
       {
         href: "https://gignote.io",
@@ -46,20 +56,9 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "fiarfli.art",
-    brief: "My girlfriend's portfolio! ",
-    description: "This is an ongoing collaborative effort, changes are typically made on a monthly basis. The frontend is written in Vue, managed using AstroJS, and hosted on Vercel. There's an admin dashboard which my girlfiend uses to upload art and links. The data store for the art and descriptions is the github repo! There's a service hosted on fly.io which handles automated image compression and git commits when updates are submitted.",
-    links: [
-      {
-        href: "https://fiarfli.art",
-      },
-    ],
-  },
-  {
-    hidden: true,
-    title: "Artifacts MMO Client",
-    brief: "",
-    description: "",
+    title: "ArtifactsMMO Client",
+    brief: "This is my first Go project!",
+    description: "<a href='https://artifactsmmo.com/' target='_blank'>ArtifactsMMO</a> is an MMO where the primary means to play the game is by making REST requests directly to the game server. Players are encouraged to write bots to control up to 5 characters. I maintain a client written in <strong>Golang</strong>, which has a terminal based GUI and facilitates both basic interaction with the game API, as well as some more advanced strategies via state machines called 'command generators'. The game also features a market trade system that I have been writing a small engine for. That market engine uses a <strong>SQLite</strong> database to store regularly compiled market information.",
     links: [
       {
         href: "https://github.com/keaysma/artifactsmmo.com",
@@ -69,7 +68,7 @@ export const projects: Project[] = [
   {
     title: "Today.",
     brief: "A todo list with just the stuff I want.",
-    description: "I got really frustrated with how I can't find a todo app the does *exactly* what I want, so, I have put together plans to build my own. This is on my... todo list, I haven't started putting down any code yet, just planning. For the frontend, I'm planning on building this in Svelte as a means of building up my understanding of the framework's data management and API request tools.",
+    description: "I got really frustrated with how I can't find a todo app the does <i>exactly</i> what I want, so, I built my own. Checklists and entries (whether a checkbox is checked, or stricken) and searched using a robus system of tags. This is a pretty simple service that I find gives me some good day-to-day utility. I built the frontend for this service using <strong>Nuxt</strong>, and the backend using the <strong>Nimble</strong> language. All of the data is stored in a small <strong>Postgres</strong> database. The frontend is hosted using <strong>Vercel</strong>, while both the database and backend are hosted on <strong>fly.io</strong>.",
     links: [
       {
         href: "https://today.keays.io",
@@ -85,10 +84,9 @@ export const projects: Project[] = [
     ],
   },
   {
-    hidden: true,
-    title: "BlueSky PDS for Production",
+    title: "BlueSky PDS Tutorial",
     brief: "This is a quick write-up I did on how to host a blueksy PDS for free",
-    description: "",
+    description: "The team behind the Personal Data Server (PDS) used for BlueSky share their open-sourced code on GitHub, <a href='https://github.com/bluesky-social/pds' target='_blank'>here</a>. This repo's README comes with instructions for hosting the services via a docker-compose, and is designed to be run locally by any typical power user. I have taken their setup and converted it into a tutorial for hosting a PDS on <strong>fly.io</strong>. The benefit of running this way is that you don't need to guarantee uptime for your own hardware, and, it's free (fly.io does not collect bills under $5)!",
     links: [
       {
         href: "https://github.com/keaysma/pds-fly.io-template",
@@ -96,27 +94,24 @@ export const projects: Project[] = [
     ],
   },
   {
-    hidden: true,
     title: "ATProto Polls Proposal",
-    brief: "",
-    description: "",
-  },
-  {
-    hidden: true,
-    title: "sheeta.dog",
-    brief: "",
-    description: "",
+    brief: "Polls in BlueSky (maybe? we'll see)",
+    description: "An open-source project I am looking to controbute too. ATProto is the network protocol that powers BlueSky. This is a schema I am proposing for single, multi, and soon, ranked-choice polls in BlueSky. If this does move forward, it may become the system for allowing user polls!",
     links: [
       {
-        href: "https://github.com/keaysma/sheeta.dog",
+        labelOverride: "GitHub Pull Request",
+        href: "https://github.com/bluesky-social/atproto/pull/3298",
+      },
+      {
+        labelOverride: "GitHub Issue",
+        href: "https://github.com/bluesky-social/atproto/discussions/1310",
       },
     ],
   },
   {
-    hidden: true,
     title: "My RSS App",
-    brief: "",
-    description: "",
+    brief: "A small, mostly in-browser, RSS feed reader",
+    description: "Kind-of like my app 'Today.', this is inspired by me looking to put together a very particular set of features for a fairly simple task. This time, I'm also using this project to also build up my skills with some browser APIs that I find interesting. This project is written using <strong>SvelteKit</strong>, and features an in-browser database powered by <strong>SQLite</strong>. I also plan to put together a <strong>Service Worker</strong> to handle feed polling updates when the tab is unloaded. CORS ultimately does prevent this application from being fully in browser, so there's a small backend (using SvelteKit still) that handles resource proxying.",
     links: [
       {
         href: "https://github.com/keaysma/rss-app",
@@ -124,20 +119,38 @@ export const projects: Project[] = [
     ],
   },
   {
-    hidden: true,
-    title: "X-Bar",
-    brief: "X-bar syntax decomposition tool.",
-    description: "I built this while studying linguistics at Mason. I was inspired by integral-calculator when I created this. The idea was to create an equivalently useful tool for linguistic students to quickly prototype and validate their work. This project is still in development, but  I typically only work on it for maybe 1-2 weeks out of the year. The original prototype was written in a Jupyter Notebook, which I later converted into a Flask server hosted on Heroku (RIP). As part of the web-based transition, I worked on performance optimizations that brought the average compute time for a sentence down from 5 minutes to about 1/1000 of a second. Currently I'm preparing to put it back online as a pair of domain-driven services written in Rust and Python, with a frontend in ... I haven't decided yet!",
+    title: "sheeta.dog",
+    brief: "Real time in-browser game",
+    description: "This is a silly little where you run around as a french bulldog, jumping around on couches, barking, and leaving your mark in the world 😂. All of the game dev I have done in the past has been using a game engine, usually Unity. I decided that for a change, I wanted to build a game without an engine, instead, opting to use some of my web-dev skills to put something together from scratch. The game itself is rendered using <strong>three-js</strong>, and the frontend is built using <strong>SvelteKit</strong>. The backend is a socket-based <strong>TypeScript</strong> service that is run using <strong>Bun.JS</strong>. I designed the backend to be horizontally scalable by interacting with <strong>Redis</strong> as a pub/sub. The model of the frenchie was made by my lovely fiance!",
+    extra: "<br><br>I have been able to play real-time with some friends for a laugh, and even had the chance to test out how well the real-time works while half-way across the world in Tokyo! The website is named after my dog, <a href='/sheeta.jpg' target='_blank'>sheeta</a>, but it is currently down, though, I need to renew/re-buy the domain.",
     links: [
       {
+        href: "https://sheeta.dog",
+      },
+      {
+        href: "https://github.com/keaysma/sheeta.dog",
+      },
+    ],
+  },
+  {
+    hidden: false,
+    title: "X-Bar",
+    brief: "Langustics syntax decomposition tool",
+    description: "I built this while studying linguistics at Mason. I was inspired by <a href='https://www.integral-calculator.com/' target='_blank'>integral-calculator</a> when I created this. The idea was to create an similarly useful tool for linguistic students to quickly prototype and validate syntax trees. I typically only work on this tool for maybe 1-2 weeks out of the year, making improvements based on different things I have learned. The original prototype was written in a Jupyter Notebook, which I later converted into a Flask server hosted on Heroku (RIP, have not put it back up yet). As part of the web-based transition, I worked on performance optimizations that brought the average compute time for a sentence down from 30 seconds to about 1/1000 of a second. Currently I'm preparing to put it back online as a pair of domain-driven services written in Rust and Python, with a frontend in ... I haven't decided yet!",
+    links: [
+      {
+        labelOverride: "Project Website (dead link)",
         href: "https://syntax.keays.io",
+      },
+      {
+        href: "https://github.com/keaysma/CompLing",
       },
     ],
   },
   {
     title: "GoComputeMe",
     brief: "Using WebAssembly for democratized workload distrobution.",
-    description: "This was an experiment I did for a hackathon in 2020. The idea is that someone can get help with computationally intensive tasks from strangers on the internet, and the strangers on the internet get paid to help. People who want help through the service submit code in C++/Rust/anything that can compiled into webassembly. Helpers then download and run the webassembly with inputs they get from a central server. I had a lot of fun learning about webassembly through the course of this project. It's not one I'm actively working on however.",
+    description: "This was an experiment I did for a hackathon in 2020. The idea is that someone can get help with computationally intensive tasks from strangers on the internet, and the strangers on the internet get paid to help. People who want help through the service submit code in C++/Rust/anything that can compiled into <strong>webassembly</strong>. Helpers then download and run the webassembly with inputs they get from a central server. I had a lot of fun learning about webassembly through the course of this project. I'm not actively working on this project any more.",
     links: [
       {
         href: "https://github.com/keaysma/GoComputeMe",
@@ -146,7 +159,7 @@ export const projects: Project[] = [
   },
   {
     title: "UtilityOS",
-    brief: "A bootloader and rudamentary operating system designed for 32-bit machines.",
+    brief: "A bootloader and rudamentary operating system designed for 32-bit machines",
     description: "I wrote it entirely in x64 assembly. This project was largely how I got familiar with low level and OS concepts. I've paused working on it indefinitely, but, would like to come back to it with fresh eyes someday.",
     links: [
       {
@@ -176,7 +189,7 @@ export const projects: Project[] = [
       },
     ],
   },
-];
+].filter(({ hidden }) => !hidden)
 
 export interface Experience {
   name: string;
