@@ -6,9 +6,9 @@
 
 <div class="work-card">
     <hgroup>
-        <h4>{name}</h4>
-        <h5>{company}</h5>
-        <h6>{time}</h6>
+        <h3>{name}</h3>
+        <h4>{company}</h4>
+        <h5>{time}</h5>
     </hgroup>
     <ul>
         {#each points as point}

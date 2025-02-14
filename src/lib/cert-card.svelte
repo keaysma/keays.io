@@ -18,9 +18,9 @@
         style="--image-url: url({image})"
     ></div>
     <hgroup>
-        <h4>{name}</h4>
-        <h5>{company}</h5>
-        <h6>{time}</h6>
+        <h3>{name}</h3>
+        <h4>{company}</h4>
+        <h5>{time}</h5>
     </hgroup>
     {#if description}
         <p>{description}</p>
