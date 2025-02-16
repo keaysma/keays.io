@@ -26,7 +26,9 @@
         <p>{description}</p>
     {/if}
     {#if href}
-        <a class="inverted-colors interactive" {href}>see cert →</a>
+        <a class="inverted-colors interactive" {href} target="_blank">
+            see cert →
+        </a>
     {/if}
 </div>
 <br />
@@ -96,7 +98,7 @@
             }
 
             &.image-full-white {
-                background: var(--background-image) #FFF;
+                background: var(--background-image) #fff;
             }
         }
 
