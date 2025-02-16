@@ -4,11 +4,13 @@
 
 @font-face {
   font-family: display;
+  font-display: swap;
   src: url(/devinne-swash.regular.ttf);
 }
 
 @font-face {
   font-family: body;
+  font-display: swap;
   src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmYmRjRdE.woff2);
 }
 
